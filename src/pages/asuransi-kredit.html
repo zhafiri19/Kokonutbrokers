@@ -1,0 +1,280 @@
+<!-- Hero Section -->
+<section class="py-20 bg-gradient-to-br from-orange-600 to-orange-700 text-white">
+    <div class="container mx-auto px-4">
+        <div class="flex flex-col lg:flex-row items-center gap-12">
+            <div class="flex-1">
+                <div class="mb-6">
+                    <button onclick="router.navigateTo('produk')" class="inline-flex items-center text-orange-200 hover:text-white transition-colors">
+                        <i class="fas fa-arrow-left mr-2"></i>
+                        Kembali ke Produk
+                    </button>
+                </div>
+                <h1 class="text-4xl md:text-5xl font-bold mb-6">
+                    Asuransi Kredit
+                </h1>
+                <p class="text-xl text-orange-100 mb-8 leading-relaxed">
+                    Perlindungan untuk bank dan lembaga keuangan dari risiko gagal bayar debitur, serta asuransi tanggung gugat untuk berbagai kebutuhan bisnis.
+                </p>
+                <div class="flex flex-wrap gap-4">
+                    <button onclick="document.getElementById('detail-produk').scrollIntoView({behavior: 'smooth'})" class="border-2 border-white text-white hover:bg-white hover:text-orange-700 font-bold px-8 py-4 rounded-full transition-all duration-300">
+                        <i class="fas fa-info-circle mr-2"></i>Lihat Detail
+                    </button>
+                </div>
+            </div>
+            <div class="flex-1">
+                <div class="relative">
+                    <img src="https://via.placeholder.com/600x400/ea580c/ffffff?text=Credit+Insurance" alt="Asuransi Kredit" class="rounded-2xl shadow-2xl">
+                    <div class="absolute -bottom-6 -right-6 bg-white text-orange-700 p-6 rounded-xl shadow-lg">
+                        <div class="text-3xl font-bold">0.8% - 2.5%</div>
+                        <div class="text-sm text-gray-600">Premi per tahun</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Product Types -->
+<section class="py-16 bg-gray-50">
+    <div class="container mx-auto px-4">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl font-bold text-gray-900 mb-4">Jenis Produk</h2>
+            <p class="text-lg text-gray-600">Solusi lengkap untuk proteksi kredit dan tanggung gugat</p>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300">
+                <div class="w-16 h-16 bg-orange-100 rounded-2xl flex items-center justify-center mb-6">
+                    <i class="fas fa-hand-holding-usd text-orange-600 text-2xl"></i>
+                </div>
+                <h3 class="text-xl font-bold text-gray-900 mb-4">Asuransi Kredit</h3>
+                <p class="text-gray-600 mb-6">Melindungi bank dan lembaga keuangan jika debitur tidak mampu melunasi pinjaman atau mengalami gagal bayar.</p>
+                <ul class="space-y-2 text-sm text-gray-600">
+                    <li><i class="fas fa-check text-orange-500 mr-2"></i>Kredit Konsumen</li>
+                    <li><i class="fas fa-check text-orange-500 mr-2"></i>Kredit KPR</li>
+                    <li><i class="fas fa-check text-orange-500 mr-2"></i>Kredit Modal Kerja</li>
+                    <li><i class="fas fa-check text-orange-500 mr-2"></i>Kredit Investasi</li>
+                </ul>
+            </div>
+            
+            <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300">
+                <div class="w-16 h-16 bg-blue-100 rounded-2xl flex items-center justify-center mb-6">
+                    <i class="fas fa-store text-blue-600 text-2xl"></i>
+                </div>
+                <h3 class="text-xl font-bold text-gray-900 mb-4">Asuransi Niaga</h3>
+                <p class="text-gray-600 mb-6">Perlindungan khusus untuk kegiatan bisnis dan perdagangan dari berbagai risiko operasional.</p>
+                <ul class="space-y-2 text-sm text-gray-600">
+                    <li><i class="fas fa-check text-orange-500 mr-2"></i>Pertanggungan kredit niaga</li>
+                    <li><i class="fas fa-check text-orange-500 mr-2"></i>Proteksi piutang usaha</li>
+                    <li><i class="fas fa-check text-orange-500 mr-2"></i>Risiko politik</li>
+                    <li><i class="fas fa-check text-orange-500 mr-2"></i>Kepailitan debitur</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Detail Produk -->
+<section id="detail-produk" class="py-20 bg-white">
+    <div class="container mx-auto px-4">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl font-bold text-gray-900 mb-4">Detail Produk</h2>
+            <p class="text-lg text-gray-600">Pemahaman lengkap tentang perlindungan yang kami tawarkan</p>
+        </div>
+
+        <!-- Asuransi Kredit Detail -->
+        <div class="mb-16">
+            <div class="bg-gradient-to-br from-orange-50 to-white p-8 rounded-2xl border border-orange-200">
+                <div class="flex items-center mb-6">
+                    <div class="w-12 h-12 bg-orange-600 rounded-xl flex items-center justify-center mr-4">
+                        <i class="fas fa-university text-white text-xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900">Asuransi Kredit</h3>
+                </div>
+                <p class="text-gray-700 mb-6 leading-relaxed">
+                    Asuransi kredit adalah jenis asuransi yang disediakan untuk tertanggung bank atau lembaga keuangan jika debitur (orang yang melakukan pinjaman) tidak mampu melunasi pinjaman atau mengalami gagal bayar.
+                </p>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div>
+                        <h4 class="font-semibold text-gray-900 mb-4">Jenis Kredit yang Diproteksi:</h4>
+                        <div class="space-y-3">
+                            <div class="flex items-start">
+                                <i class="fas fa-check-circle text-orange-600 mt-1 mr-3"></i>
+                                <span class="text-gray-700">Kredit Konsumen (KTA, Kartu Kredit)</span>
+                            </div>
+                            <div class="flex items-start">
+                                <i class="fas fa-check-circle text-orange-600 mt-1 mr-3"></i>
+                                <span class="text-gray-700">Kredit Pemilikan Rumah (KPR)</span>
+                            </div>
+                            <div class="flex items-start">
+                                <i class="fas fa-check-circle text-orange-600 mt-1 mr-3"></i>
+                                <span class="text-gray-700">Kredit Kendaraan Bermotor</span>
+                            </div>
+                            <div class="flex items-start">
+                                <i class="fas fa-check-circle text-orange-600 mt-1 mr-3"></i>
+                                <span class="text-gray-700">Kredit Modal Kerja</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <h4 class="font-semibold text-gray-900 mb-4">Manfaat Perlindungan:</h4>
+                        <div class="space-y-3">
+                            <div class="flex items-start">
+                                <i class="fas fa-shield-alt text-orange-600 mt-1 mr-3"></i>
+                                <span class="text-gray-700">Mengurangi risiko gagal bayar</span>
+                            </div>
+                            <div class="flex items-start">
+                                <i class="fas fa-chart-line text-orange-600 mt-1 mr-3"></i>
+                                <span class="text-gray-700">Meningkatkan kelayakan kredit</span>
+                            </div>
+                            <div class="flex items-start">
+                                <i class="fas fa-coins text-orange-600 mt-1 mr-3"></i>
+                                <span class="text-gray-700">Proteksi portofolio kredit</span>
+                            </div>
+                            <div class="flex items-start">
+                                <i class="fas fa-balance-scale text-orange-600 mt-1 mr-3"></i>
+                                <span class="text-gray-700">Kepastian pembayaran</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Project Liability Types -->
+        <div>
+            <h3 class="text-2xl font-bold text-gray-900 mb-8 text-center">Asuransi Project Liability</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="bg-white p-6 rounded-xl shadow-lg border border-gray-200 hover:border-orange-300 transition-all duration-300">
+                    <div class="w-10 h-10 bg-purple-100 rounded-lg flex items-center justify-center mb-4">
+                        <i class="fas fa-user-tie text-purple-600"></i>
+                    </div>
+                    <h4 class="font-bold text-gray-900 mb-2">DOL Liability</h4>
+                    <p class="text-sm text-gray-600">Director's/Employer's and Officer Liability - Proteksi untuk eksekutif perusahaan</p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-xl shadow-lg border border-gray-200 hover:border-orange-300 transition-all duration-300">
+                    <div class="w-10 h-10 bg-green-100 rounded-lg flex items-center justify-center mb-4">
+                        <i class="fas fa-users text-green-600"></i>
+                    </div>
+                    <h4 class="font-bold text-gray-900 mb-2">Public Liability</h4>
+                    <p class="text-sm text-gray-600">Tanggung jawab umum kepada publik untuk cidera badan dan kerusakan properti</p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-xl shadow-lg border border-gray-200 hover:border-orange-300 transition-all duration-300">
+                    <div class="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
+                        <i class="fas fa-shield-alt text-blue-600"></i>
+                    </div>
+                    <h4 class="font-bold text-gray-900 mb-2">CGL</h4>
+                    <p class="text-sm text-gray-600">Comprehensive General Liability - Tanggung gugat komprehensif</p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-xl shadow-lg border border-gray-200 hover:border-orange-300 transition-all duration-300">
+                    <div class="w-10 h-10 bg-orange-100 rounded-lg flex items-center justify-center mb-4">
+                        <i class="fas fa-layer-group text-orange-600"></i>
+                    </div>
+                    <h4 class="font-bold text-gray-900 mb-2">CLI</h4>
+                    <p class="text-sm text-gray-600">Combined Liability Insurance - Kombinasi berbagai tanggung gugat</p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-xl shadow-lg border border-gray-200 hover:border-orange-300 transition-all duration-300">
+                    <div class="w-10 h-10 bg-red-100 rounded-lg flex items-center justify-center mb-4">
+                        <i class="fas fa-ship text-red-600"></i>
+                    </div>
+                    <h4 class="font-bold text-gray-900 mb-2">Stevedoring Liability</h4>
+                    <p class="text-sm text-gray-600">Tanggung jawab untuk kegiatan bongkar muat barang</p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-xl shadow-lg border border-gray-200 hover:border-orange-300 transition-all duration-300">
+                    <div class="w-10 h-10 bg-teal-100 rounded-lg flex items-center justify-center mb-4">
+                        <i class="fas fa-anchor text-teal-600"></i>
+                    </div>
+                    <h4 class="font-bold text-gray-900 mb-2">Port & Terminal Liability</h4>
+                    <p class="text-sm text-gray-600">Tanggung jawab untuk operasional pelabuhan</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Benefits -->
+<section class="py-20 bg-orange-50">
+    <div class="container mx-auto px-4">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl font-bold text-gray-900 mb-4">Keunggulan Kami</h2>
+            <p class="text-lg text-gray-600">Mengapa memilih asuransi kredit dari Kokonut</p>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="text-center">
+                <div class="w-20 h-20 bg-orange-600 rounded-2xl flex items-center justify-center mx-auto mb-6">
+                    <i class="fas fa-chart-pie text-white text-2xl"></i>
+                </div>
+                <h3 class="text-xl font-bold text-gray-900 mb-4">Analisis Risiko</h3>
+                <p class="text-gray-600">Tim ahli kami melakukan analisis risiko komprehensif untuk menentukan coverage yang tepat.</p>
+            </div>
+            
+            <div class="text-center">
+                <div class="w-20 h-20 bg-orange-600 rounded-2xl flex items-center justify-center mx-auto mb-6">
+                    <i class="fas fa-handshake text-white text-2xl"></i>
+                </div>
+                <h3 class="text-xl font-bold text-gray-900 mb-4">Reasuransi Kuat</h3>
+                <p class="text-gray-600">Didukung oleh perusahaan reasuransi lokal dan internasional yang terpercaya.</p>
+            </div>
+            
+            <div class="text-center">
+                <div class="w-20 h-20 bg-orange-600 rounded-2xl flex items-center justify-center mx-auto mb-6">
+                    <i class="fas fa-file-invoice-dollar text-white text-2xl"></i>
+                </div>
+                <h3 class="text-xl font-bold text-gray-900 mb-4">Proses Klaim Cepat</h3>
+                <p class="text-gray-600">Proses klaim yang transparan dan cepat dengan dokumentasi yang jelas.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Target Market -->
+<section class="py-20 bg-white">
+    <div class="container mx-auto px-4">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl font-bold text-gray-900 mb-4">Pasar Sasaran</h2>
+            <p class="text-lg text-gray-600">Lembaga keuangan yang dapat memanfaatkan layanan kami</p>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div class="text-center bg-gray-50 p-8 rounded-xl">
+                <div class="w-16 h-16 bg-orange-100 rounded-2xl flex items-center justify-center mx-auto mb-6">
+                    <i class="fas fa-university text-orange-600 text-2xl"></i>
+                </div>
+                <h3 class="text-lg font-bold text-gray-900 mb-3">Bank Umum</h3>
+                <p class="text-gray-600 text-sm">Bank konvensional dan syariah untuk proteksi portofolio kredit</p>
+            </div>
+            
+            <div class="text-center bg-gray-50 p-8 rounded-xl">
+                <div class="w-16 h-16 bg-orange-100 rounded-2xl flex items-center justify-center mx-auto mb-6">
+                    <i class="fas fa-piggy-bank text-orange-600 text-2xl"></i>
+                </div>
+                <h3 class="text-lg font-bold text-gray-900 mb-3">BPR</h3>
+                <p class="text-gray-600 text-sm">Bank Perkreditan Rakyat untuk proteksi kredit usaha kecil</p>
+            </div>
+            
+            <div class="text-center bg-gray-50 p-8 rounded-xl">
+                <div class="w-16 h-16 bg-orange-100 rounded-2xl flex items-center justify-center mx-auto mb-6">
+                    <i class="fas fa-landmark text-orange-600 text-2xl"></i>
+                </div>
+                <h3 class="text-lg font-bold text-gray-900 mb-3">Leasing</h3>
+                <p class="text-gray-600 text-sm">Perusahaan leasing untuk proteksi pembiayaan konsumen</p>
+            </div>
+            
+            <div class="text-center bg-gray-50 p-8 rounded-xl">
+                <div class="w-16 h-16 bg-orange-100 rounded-2xl flex items-center justify-center mx-auto mb-6">
+                    <i class="fas fa-coins text-orange-600 text-2xl"></i>
+                </div>
+                <h3 class="text-lg font-bold text-gray-900 mb-3">Fintech</h3>
+                <p class="text-gray-600 text-sm">Perusahaan teknologi finansial untuk proteksi pinjaman online</p>
+            </div>
+        </div>
+    </div>
+</section>
+

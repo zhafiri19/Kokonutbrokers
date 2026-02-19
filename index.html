@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+    <meta name="theme-color" content="#064e3b">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <title>Kokonut Insurance Brokers - The Next Level of Insurance Brokers</title>
+    <link rel="icon" type="image/png" href="https://picsum.photos/seed/kokonut-favicon/32/32.jpg">
+    <link rel="apple-touch-icon" href="https://picsum.photos/seed/kokonut-favicon/180/180.jpg">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'sans': ['Inter', 'system-ui', 'sans-serif'],
+                    },
+                    animation: {
+                        'fade-in': 'fadeIn 0.8s ease-in-out',
+                        'slide-up': 'slideUp 0.6s ease-out',
+                        'bounce-slow': 'bounce 2s infinite',
+                    },
+                    keyframes: {
+                        fadeIn: {
+                            '0%': { opacity: '0', transform: 'translateY(20px)' },
+                            '100%': { opacity: '1', transform: 'translateY(0)' }
+                        },
+                        slideUp: {
+                            '0%': { opacity: '0', transform: 'translateY(30px)' },
+                            '100%': { opacity: '1', transform: 'translateY(0)' }
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="src/assets/css/style.css">
+    <!-- <link rel="stylesheet" href="src/components/Navbar.html"> -->
+</head>
+<body class="font-sans">
+    <!-- Loading Screen -->
+    <div id="loading-screen-container"></div>
+    
+    <!-- Navbar -->
+    <div id="navbar"></div>
+
+    <!-- Main Content -->
+    <main id="main-content">
+        <!-- Content will be loaded here -->
+    </main>
+
+    <!-- Footer -->
+    <div id="footer"></div>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/628123456789" target="_blank" class="fixed bottom-6 right-6 bg-green-500 text-white w-14 h-14 rounded-full shadow-lg hover:bg-green-600 transition-all duration-300 z-40 hover:scale-110 flex items-center justify-center">
+        <i class="fab fa-whatsapp text-xl"></i>
+    </a>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="fixed bottom-6 left-6 bg-emerald-600 text-white p-4 rounded-full shadow-lg hover:bg-emerald-700 transition-all duration-300 z-40 opacity-0 invisible hover:scale-110">
+        <i class="fas fa-arrow-up text-xl"></i>
+    </button>
+
+    <!-- Scripts -->
+    <script src="src/assets/js/router.js"></script>
+    <script src="src/assets/js/main.js"></script>
+</body>
+</html>

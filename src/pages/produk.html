@@ -1,0 +1,327 @@
+<!-- Hero Section -->
+<section class="py-20 bg-gradient-to-br from-emerald-50 to-white">
+    <div class="container mx-auto px-4">
+        <div class="text-center fade-in">
+            <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+                Produk <span class="text-emerald-600">Asuransi</span>
+            </h1>
+            <p class="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+                Solusi proteksi komprehensif untuk berbagai kebutuhan asuransi Anda dan perusahaan
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- Products Grid Section -->
+<section class="py-20 bg-white">
+    <div class="container mx-auto px-4">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            
+            <!-- Asuransi Alat Berat -->
+            <div class="product-card card-hover bg-white rounded-xl shadow-lg overflow-hidden fade-in">
+                <div class="bg-gradient-to-r from-emerald-600 to-emerald-700 p-6 text-white">
+                    <div class="bg-white bg-opacity-20 w-16 h-16 rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-truck-loading text-3xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-2">Asuransi Alat Berat</h3>
+                    <p class="text-emerald-100">Proteksi untuk peralatan berat dan mesin industri</p>
+                </div>
+                <div class="p-6">
+                    <div class="space-y-3 mb-6">
+                        <div class="flex items-center">
+                            <i class="fas fa-check-circle text-emerald-600 mr-3"></i>
+                            <span class="text-gray-700">Asuransi Pabrik</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-check-circle text-emerald-600 mr-3"></i>
+                            <span class="text-gray-700">Asuransi Kesehatan</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-check-circle text-emerald-600 mr-3"></i>
+                            <span class="text-gray-700">Kebakaran/Harta Benda</span>
+                        </div>
+                    </div>
+                    <button onclick="router.navigateTo('asuransi-alat-berat')" class="w-full bg-emerald-600 hover:bg-emerald-700 text-white py-3 rounded-lg font-semibold transition-all duration-300">
+                        <i class="fas fa-arrow-right mr-2"></i>Lihat Detail
+                    </button>
+                </div>
+            </div>
+
+            <!-- Asuransi Cargo/Pengangkutan -->
+            <div class="product-card card-hover bg-white rounded-xl shadow-lg overflow-hidden fade-in">
+                <div class="bg-gradient-to-r from-blue-600 to-blue-700 p-6 text-white">
+                    <div class="bg-white bg-opacity-20 w-16 h-16 rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-ship text-3xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-2">Asuransi Cargo/Pengangkutan</h3>
+                    <p class="text-blue-100">Proteksi untuk barang selama pengiriman</p>
+                </div>
+                <div class="p-6">
+                    <div class="space-y-3 mb-6">
+                        <div class="flex items-center">
+                            <i class="fas fa-check-circle text-blue-600 mr-3"></i>
+                            <span class="text-gray-700">Asuransi Gudang</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-check-circle text-blue-600 mr-3"></i>
+                            <span class="text-gray-700">Asuransi Truck</span>
+                        </div>
+                    </div>
+                    <button onclick="router.navigateTo('asuransi-cargo')" class="w-full bg-blue-600 hover:bg-blue-700 text-white py-3 rounded-lg font-semibold transition-all duration-300">
+                        <i class="fas fa-arrow-right mr-2"></i>Lihat Detail
+                    </button>
+                </div>
+            </div>
+
+            <!-- Asuransi Jaminan Proyek -->
+            <div class="product-card card-hover bg-white rounded-xl shadow-lg overflow-hidden fade-in">
+                <div class="bg-gradient-to-r from-red-600 to-red-700 p-6 text-white">
+                    <div class="bg-white bg-opacity-20 w-16 h-16 rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-cogs text-3xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-2">Asuransi Project Liability</h3>
+                    <p class="text-red-100">Jaminan tanggung jawab hukum kepada pihak ketiga</p>
+                </div>
+                <div class="p-6">
+                    <div class="space-y-3 mb-6">
+                        <div class="flex items-center">
+                            <i class="fas fa-check-circle text-red-600 mr-3"></i>
+                            <span class="text-gray-700">Pemasangan Mesin (EAR)</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-check-circle text-red-600 mr-3"></i>
+                            <span class="text-gray-700">Asuransi Konstruksi (CAR)</span>
+                        </div>
+                    </div>
+                    <button onclick="router.navigateTo('asuransi-project-liability')" class="w-full bg-red-600 hover:bg-red-700 text-white py-3 rounded-lg font-semibold transition-all duration-300">
+                        <i class="fas fa-arrow-right mr-2"></i>Lihat Detail
+                    </button>
+                </div>
+            </div>
+
+            <!-- Asuransi Kendaraan -->
+            <div class="product-card card-hover bg-white rounded-xl shadow-lg overflow-hidden fade-in">
+                <div class="bg-gradient-to-r from-purple-600 to-purple-700 p-6 text-white">
+                    <div class="bg-white bg-opacity-20 w-16 h-16 rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-car text-3xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-2">Asuransi Kendaraan</h3>
+                    <p class="text-purple-100">Proteksi untuk kendaraan pribadi & komersial</p>
+                </div>
+                <div class="p-6">
+                    <div class="space-y-3 mb-6">
+                        <div class="flex items-center">
+                            <i class="fas fa-check-circle text-purple-600 mr-3"></i>
+                            <span class="text-gray-700">Asuransi Perjalanan</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-check-circle text-purple-600 mr-3"></i>
+                            <span class="text-gray-700">Asuransi Kecelakaan Diri</span>
+                        </div>
+                    </div>
+                    <button onclick="router.navigateTo('asuransi-kendaraan')" class="w-full bg-purple-600 hover:bg-purple-700 text-white py-3 rounded-lg font-semibold transition-all duration-300">
+                        <i class="fas fa-arrow-right mr-2"></i>Lihat Detail
+                    </button>
+                </div>
+            </div>
+
+            <!-- Asuransi Kredit -->
+            <div class="product-card card-hover bg-white rounded-xl shadow-lg overflow-hidden fade-in">
+                <div class="bg-gradient-to-r from-orange-600 to-orange-700 p-6 text-white">
+                    <div class="bg-white bg-opacity-20 w-16 h-16 rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-hand-holding-usd text-3xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-2">Asuransi Kredit</h3>
+                    <p class="text-orange-100">Proteksi terhadap risiko kredit macet</p>
+                </div>
+                <div class="p-6">
+                    <div class="space-y-3 mb-6">
+                        <div class="flex items-center">
+                            <i class="fas fa-check-circle text-orange-600 mr-3"></i>
+                            <span class="text-gray-700">Asuransi Kredit</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-check-circle text-orange-600 mr-3"></i>
+                            <span class="text-gray-700">Asuransi Niaga</span>
+                        </div>
+                    </div>
+                    <button onclick="router.navigateTo('asuransi-kredit')" class="w-full bg-orange-600 hover:bg-orange-700 text-white py-3 rounded-lg font-semibold transition-all duration-300">
+                        <i class="fas fa-arrow-right mr-2"></i>Lihat Detail
+                    </button>
+                </div>
+            </div>
+
+            <!-- Asuransi Kesehatan Internasional -->
+            <div class="product-card card-hover bg-white rounded-xl shadow-lg overflow-hidden fade-in">
+                <div class="bg-gradient-to-r from-teal-600 to-teal-700 p-6 text-white">
+                    <div class="bg-white bg-opacity-20 w-16 h-16 rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-globe-asia text-3xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-2">Asuransi Kesehatan Internasional</h3>
+                    <p class="text-teal-100">Cakupan kesehatan global</p>
+                </div>
+                <div class="p-6">
+                    <div class="space-y-3 mb-6">
+                        <div class="flex items-center">
+                            <i class="fas fa-check-circle text-teal-600 mr-3"></i>
+                            <span class="text-gray-700">Asuransi Truck</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-check-circle text-teal-600 mr-3"></i>
+                            <span class="text-gray-700">Bank Garansi</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-check-circle text-teal-600 mr-3"></i>
+                            <span class="text-gray-700">Asuransi Jaminan Pelaksanaan</span>
+                        </div>
+                    </div>
+                    <button onclick="router.navigateTo('asuransi-kesehatan-internasional')" class="w-full bg-teal-600 hover:bg-teal-700 text-white py-3 rounded-lg font-semibold transition-all duration-300">
+                        <i class="fas fa-arrow-right mr-2"></i>Lihat Detail
+                    </button>
+                </div>
+            </div>
+
+            <!-- Asuransi Jaminan (Surety Bond) -->
+            <div class="product-card card-hover bg-white rounded-xl shadow-lg overflow-hidden fade-in">
+                <div class="bg-gradient-to-r from-indigo-600 to-indigo-700 p-6 text-white">
+                    <div class="bg-white bg-opacity-20 w-16 h-16 rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-certificate text-3xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-2">Asuransi Jaminan (Surety Bond)</h3>
+                    <p class="text-indigo-100">Jaminan pelaksanaan kontrak dan proyek</p>
+                </div>
+                <div class="p-6">
+                    <div class="space-y-3 mb-6">
+                        <div class="flex items-center">
+                            <i class="fas fa-check-circle text-indigo-600 mr-3"></i>
+                            <span class="text-gray-700">Asuransi Jaminan Pemeliharaan</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-check-circle text-indigo-600 mr-3"></i>
+                            <span class="text-gray-700">Asuransi Kredit Niaga</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-check-circle text-indigo-600 mr-3"></i>
+                            <span class="text-gray-700">Lainnya sesuai kebutuhan nasabah</span>
+                        </div>
+                    </div>
+                    <button onclick="router.navigateTo('asuransi-jaminan')" class="w-full bg-indigo-600 hover:bg-indigo-700 text-white py-3 rounded-lg font-semibold transition-all duration-300">
+                        <i class="fas fa-arrow-right mr-2"></i>Lihat Detail
+                    </button>
+                </div>
+            </div>
+
+            <!-- Asuransi Kesehatan Karyawan -->
+            <div class="product-card card-hover bg-white rounded-xl shadow-lg overflow-hidden fade-in">
+                <div class="bg-gradient-to-r from-pink-600 to-pink-700 p-6 text-white">
+                    <div class="bg-white bg-opacity-20 w-16 h-16 rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-heartbeat text-3xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-2">Asuransi Kesehatan Karyawan</h3>
+                    <p class="text-pink-100">Program kesehatan untuk karyawan perusahaan</p>
+                </div>
+                <div class="p-6">
+                    <div class="space-y-3 mb-6">
+                        <div class="flex items-center">
+                            <i class="fas fa-check-circle text-pink-600 mr-3"></i>
+                            <span class="text-gray-700">Rawat Inap + Rawat Jalan</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-check-circle text-pink-600 mr-3"></i>
+                            <span class="text-gray-700">Tambahan Maternity + Gigi + Kacamata</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-check-circle text-pink-600 mr-3"></i>
+                            <span class="text-gray-700">Santunan cacat total tetap dan meninggal dunia</span>
+                        </div>
+                    </div>
+                    <button onclick="router.navigateTo('asuransi-kesehatan-karyawan')" class="w-full bg-pink-600 hover:bg-pink-700 text-white py-3 rounded-lg font-semibold transition-all duration-300">
+                        <i class="fas fa-arrow-right mr-2"></i>Lihat Detail
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- FAQ Section -->
+<section class="py-20 bg-gradient-to-br from-emerald-50 to-white">
+    <div class="container mx-auto px-4">
+        <div class="text-center mb-12 fade-in">
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+                Frequently Asked <span class="text-emerald-600">Questions</span>
+            </h2>
+            <p class="text-lg text-gray-600">Pertanyaan yang sering diajukan tentang produk kami</p>
+        </div>
+
+        <div class="max-w-3xl mx-auto">
+            <div class="space-y-4">
+                <div class="faq-item bg-white rounded-xl shadow-lg overflow-hidden fade-in">
+                    <button class="faq-toggle w-full p-6 text-left flex justify-between items-center hover:bg-emerald-50 transition-colors">
+                        <h3 class="font-semibold text-lg text-gray-900">Apa bedanya broker dengan agen asuransi?</h3>
+                        <i class="fas fa-chevron-down text-emerald-600 transition-transform"></i>
+                    </button>
+                    <div class="faq-content hidden px-6 pb-6">
+                        <p class="text-gray-600">
+                            Broker bekerja untuk kepentingan nasabah dan independen, sedangkan agen bekerja untuk perusahaan asuransi tertentu. Broker akan membantu Anda membandingkan produk dari berbagai perusahaan untuk mendapatkan yang terbaik.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="faq-item bg-white rounded-xl shadow-lg overflow-hidden fade-in">
+                    <button class="faq-toggle w-full p-6 text-left flex justify-between items-center hover:bg-emerald-50 transition-colors">
+                        <h3 class="font-semibold text-lg text-gray-900">Apakah klaim dijamin cair?</h3>
+                        <i class="fas fa-chevron-down text-emerald-600 transition-transform"></i>
+                    </button>
+                    <div class="faq-content hidden px-6 pb-6">
+                        <p class="text-gray-600">
+                            Kami tidak bisa menjamin 100% klaim cair, namun dengan bantuan broker profesional, proses klaim akan lebih mudah dan peluang cair lebih tinggi karena kami memastikan polis sesuai kebutuhan dan membantu proses administrasi.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="faq-item bg-white rounded-xl shadow-lg overflow-hidden fade-in">
+                    <button class="faq-toggle w-full p-6 text-left flex justify-between items-center hover:bg-emerald-50 transition-colors">
+                        <h3 class="font-semibold text-lg text-gray-900">Apakah premi bisa dinegosiasikan?</h3>
+                        <i class="fas fa-chevron-down text-emerald-600 transition-transform"></i>
+                    </button>
+                    <div class="faq-content hidden px-6 pb-6">
+                        <p class="text-gray-600">
+                            Ya, sebagai broker kami memiliki hubungan baik dengan berbagai perusahaan asuransi dan bisa membantu negosiasi premium untuk mendapatkan harga terbaik sesuai coverage yang Anda butuhkan.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="faq-item bg-white rounded-xl shadow-lg overflow-hidden fade-in">
+                    <button class="faq-toggle w-full p-6 text-left flex justify-between items-center hover:bg-emerald-50 transition-colors">
+                        <h3 class="font-semibold text-lg text-gray-900">Apakah konsultasi berbayar?</h3>
+                        <i class="fas fa-chevron-down text-emerald-600 transition-transform"></i>
+                    </button>
+                    <div class="faq-content hidden px-6 pb-6">
+                        <p class="text-gray-600">
+                            Konsultasi awal dengan kami gratis tanpa biaya. Kami akan membantu Anda memahami kebutuhan asuransi dan memberikan rekomendasi produk yang sesuai tanpa ada kewajiban untuk membeli.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CTA Section -->
+<section class="py-20 bg-gradient-to-r from-emerald-600 to-emerald-700">
+    <div class="container mx-auto px-4 text-center">
+        <div class="fade-in">
+            <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">
+                Butuh Bantuan Memilih Produk?
+            </h2>
+            <p class="text-xl text-emerald-100 mb-8 max-w-2xl mx-auto">
+                Tim profesional kami siap membantu Anda menemukan solusi asuransi yang tepat
+            </p>
+            <button class="bg-white text-emerald-700 px-8 py-4 rounded-full font-semibold text-lg hover:bg-emerald-50 transition-all duration-300 shadow-lg">
+                <i class="fas fa-comments mr-2"></i>
+                Konsultasi Gratis Sekarang
+            </button>
+        </div>
+    </div>
+</section>

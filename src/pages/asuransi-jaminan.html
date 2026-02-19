@@ -1,0 +1,307 @@
+<!-- Hero Section -->
+<section class="py-20 bg-gradient-to-br from-indigo-600 to-indigo-700 text-white">
+    <div class="container mx-auto px-4">
+        <div class="flex flex-col lg:flex-row items-center gap-12">
+            <div class="flex-1">
+                <div class="mb-6">
+                    <button onclick="router.navigateTo('produk')" class="inline-flex items-center text-indigo-200 hover:text-white transition-colors">
+                        <i class="fas fa-arrow-left mr-2"></i>
+                        Kembali ke Produk
+                    </button>
+                </div>
+                <h1 class="text-4xl md:text-5xl font-bold mb-6">
+                    Asuransi Jaminan (Surety Bond)
+                </h1>
+                <p class="text-xl text-indigo-100 mb-8 leading-relaxed">
+                    Perjanjian 3 pihak antara surety (Asuransi) dan Principal (Kontraktor) untuk menjamin kepentingan Obligee (Pemilik proyek) dimana apabila Principal gagal melaksanakan kewajibannya sesuai yang diperjanjikan dengan Obligee, maka Surety akan bertanggung jawab terhadap Obligee untuk menyelesaikan kewajiban Principal.
+                </p>
+                <div class="flex flex-wrap gap-4">
+                    <button onclick="document.getElementById('detail-produk').scrollIntoView({behavior: 'smooth'})" class="bg-white text-indigo-700 hover:bg-indigo-50 font-bold px-8 py-4 rounded-full transition-all duration-300">
+                        <i class="fas fa-info-circle mr-2"></i>Lihat Detail
+                    </button>
+                </div>
+            </div>
+            <div class="flex-1">
+                <div class="relative">
+                    <img src="https://via.placeholder.com/600x400/4f46e5/ffffff?text=Surety+Bond" alt="Asuransi Jaminan" class="rounded-2xl shadow-2xl">
+                    <div class="absolute -bottom-6 -right-6 bg-white text-indigo-700 p-6 rounded-xl shadow-lg">
+                        <div class="text-3xl font-bold">Jaminan</div>
+                        <div class="text-sm text-gray-600">Kontrak & Proyek</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Sub Categories -->
+<section class="py-16 bg-gray-50">
+    <div class="container mx-auto px-4">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl font-bold text-gray-900 mb-4">Jenis Jaminan</h2>
+            <p class="text-lg text-gray-600">Berbagai jenis jaminan yang tersedia sesuai kebutuhan</p>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300">
+                <div class="w-16 h-16 bg-indigo-100 rounded-2xl flex items-center justify-center mb-6">
+                    <i class="fas fa-tools text-indigo-600 text-2xl"></i>
+                </div>
+                <h3 class="text-xl font-bold text-gray-900 mb-4">Asuransi Jaminan Pemeliharaan</h3>
+                <p class="text-gray-600 mb-6">Jaminan untuk pemeliharaan proyek setelah selesai masa konstruksi sesuai spesifikasi yang disepakati.</p>
+                <ul class="space-y-2 text-sm text-gray-600">
+                    <li><i class="fas fa-check text-indigo-500 mr-2"></i>Periode pemeliharaan</li>
+                    <li><i class="fas fa-check text-indigo-500 mr-2"></i>Kualitas pekerjaan</li>
+                    <li><i class="fas fa-check text-indigo-500 mr-2"></i>Garansi material</li>
+                    <li><i class="fas fa-check text-indigo-500 mr-2"></i>Defect liability</li>
+                </ul>
+            </div>
+            
+            <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300">
+                <div class="w-16 h-16 bg-blue-100 rounded-2xl flex items-center justify-center mb-6">
+                    <i class="fas fa-store text-blue-600 text-2xl"></i>
+                </div>
+                <h3 class="text-xl font-bold text-gray-900 mb-4">Asuransi Kredit Niaga</h3>
+                <p class="text-gray-600 mb-6">Perlindungan untuk kredit usaha dan perdagangan dari risiko gagal bayar debitur.</p>
+                <ul class="space-y-2 text-sm text-gray-600">
+                    <li><i class="fas fa-check text-indigo-500 mr-2"></i>Kredit modal kerja</li>
+                    <li><i class="fas fa-check text-indigo-500 mr-2"></i>Kredit investasi</li>
+                    <li><i class="fas fa-check text-indigo-500 mr-2"></i>Risiko politik</li>
+                    <li><i class="fas fa-check text-indigo-500 mr-2"></i>Kepailitan debitur</li>
+                </ul>
+            </div>
+            
+            <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300">
+                <div class="w-16 h-16 bg-purple-100 rounded-2xl flex items-center justify-center mb-6">
+                    <i class="fas fa-cogs text-purple-600 text-2xl"></i>
+                </div>
+                <h3 class="text-xl font-bold text-gray-900 mb-4">Lainnya sesuai kebutuhan nasabah</h3>
+                <p class="text-gray-600 mb-6">Jaminan khusus yang disesuaikan dengan kebutuhan unik dan spesifik dari nasabah.</p>
+                <ul class="space-y-2 text-sm text-gray-600">
+                    <li><i class="fas fa-check text-indigo-500 mr-2"></i>Custom bond</li>
+                    <li><i class="fas fa-check text-indigo-500 mr-2"></i>Specialized guarantee</li>
+                    <li><i class="fas fa-check text-indigo-500 mr-2"></i>Tailor-made solution</li>
+                    <li><i class="fas fa-check text-indigo-500 mr-2"></i>Flexible terms</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Detail Produk -->
+<section id="detail-produk" class="py-20 bg-white">
+    <div class="container mx-auto px-4">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl font-bold text-gray-900 mb-4">Jenis Bank Garansi</h2>
+            <p class="text-lg text-gray-600">Berbagai jenis jaminan yang diterbitkan oleh bank</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <!-- Bid Bond -->
+            <div class="bg-gradient-to-br from-indigo-50 to-white p-6 rounded-2xl border border-indigo-200">
+                <div class="w-12 h-12 bg-indigo-600 rounded-xl flex items-center justify-center mb-4">
+                    <i class="fas fa-file-contract text-white text-xl"></i>
+                </div>
+                <h3 class="text-lg font-bold text-gray-900 mb-3">Bid Bond</h3>
+                <p class="text-gray-700 text-sm mb-4">
+                    Jaminan penawaran yang menjamin bahwa penawar akan menandatangani kontrak jika ditunjuk sebagai pemenang.
+                </p>
+                <div class="space-y-2">
+                    <div class="flex items-start">
+                        <i class="fas fa-shield-alt text-indigo-600 mt-1 mr-2 text-sm"></i>
+                        <span class="text-gray-700 text-sm">Jaminan penawaran lelang</span>
+                    </div>
+                    <div class="flex items-start">
+                        <i class="fas fa-handshake text-indigo-600 mt-1 mr-2 text-sm"></i>
+                        <span class="text-gray-700 text-sm">Komitmen penandatanganan</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Performance Bond -->
+            <div class="bg-gradient-to-br from-blue-50 to-white p-6 rounded-2xl border border-blue-200">
+                <div class="w-12 h-12 bg-blue-600 rounded-xl flex items-center justify-center mb-4">
+                    <i class="fas fa-tasks text-white text-xl"></i>
+                </div>
+                <h3 class="text-lg font-bold text-gray-900 mb-3">Performance Bond</h3>
+                <p class="text-gray-700 text-sm mb-4">
+                    Jaminan pelaksanaan yang memastikan kontraktor menyelesaikan pekerjaan sesuai kontrak.
+                </p>
+                <div class="space-y-2">
+                    <div class="flex items-start">
+                        <i class="fas fa-shield-alt text-blue-600 mt-1 mr-2 text-sm"></i>
+                        <span class="text-gray-700 text-sm">Jaminan penyelesaian proyek</span>
+                    </div>
+                    <div class="flex items-start">
+                        <i class="fas fa-check-circle text-blue-600 mt-1 mr-2 text-sm"></i>
+                        <span class="text-gray-700 text-sm">Sesuai spesifikasi</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Advance Payment Bond -->
+            <div class="bg-gradient-to-br from-green-50 to-white p-6 rounded-2xl border border-green-200">
+                <div class="w-12 h-12 bg-green-600 rounded-xl flex items-center justify-center mb-4">
+                    <i class="fas fa-money-bill-wave text-white text-xl"></i>
+                </div>
+                <h3 class="text-lg font-bold text-gray-900 mb-3">Advance Payment Bond</h3>
+                <p class="text-gray-700 text-sm mb-4">
+                    Jaminan pengembalian uang muka jika kontraktor gagal melaksanakan kewajibannya.
+                </p>
+                <div class="space-y-2">
+                    <div class="flex items-start">
+                        <i class="fas fa-shield-alt text-green-600 mt-1 mr-2 text-sm"></i>
+                        <span class="text-gray-700 text-sm">Perlindungan uang muka</span>
+                    </div>
+                    <div class="flex items-start">
+                        <i class="fas fa-undo text-green-600 mt-1 mr-2 text-sm"></i>
+                        <span class="text-gray-700 text-sm">Jaminan pengembalian</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Maintenance Bond -->
+            <div class="bg-gradient-to-br from-yellow-50 to-white p-6 rounded-2xl border border-yellow-200">
+                <div class="w-12 h-12 bg-yellow-600 rounded-xl flex items-center justify-center mb-4">
+                    <i class="fas fa-wrench text-white text-xl"></i>
+                </div>
+                <h3 class="text-lg font-bold text-gray-900 mb-3">Maintenance Bond</h3>
+                <p class="text-gray-700 text-sm mb-4">
+                    Jaminan pemeliharaan untuk memperbaiki cacat yang muncul selama periode pemeliharaan.
+                </p>
+                <div class="space-y-2">
+                    <div class="flex items-start">
+                        <i class="fas fa-shield-alt text-yellow-600 mt-1 mr-2 text-sm"></i>
+                        <span class="text-gray-700 text-sm">Jaminan perbaikan cacat</span>
+                    </div>
+                    <div class="flex items-start">
+                        <i class="fas fa-clock text-yellow-600 mt-1 mr-2 text-sm"></i>
+                        <span class="text-gray-700 text-sm">Periode pemeliharaan</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Kontra Garansi Bank -->
+            <div class="bg-gradient-to-br from-orange-50 to-white p-6 rounded-2xl border border-orange-200">
+                <div class="w-12 h-12 bg-orange-600 rounded-xl flex items-center justify-center mb-4">
+                    <i class="fas fa-exchange-alt text-white text-xl"></i>
+                </div>
+                <h3 class="text-lg font-bold text-gray-900 mb-3">Kontra Garansi Bank</h3>
+                <p class="text-gray-700 text-sm mb-4">
+                    Jaminan dari bank kepada surety untuk menanggung risiko yang mungkin timbul dari penerbitan surety bond.
+                </p>
+                <div class="space-y-2">
+                    <div class="flex items-start">
+                        <i class="fas fa-shield-alt text-orange-600 mt-1 mr-2 text-sm"></i>
+                        <span class="text-gray-700 text-sm">Jaminan bank ke surety</span>
+                    </div>
+                    <div class="flex items-start">
+                        <i class="fas fa-university text-orange-600 mt-1 mr-2 text-sm"></i>
+                        <span class="text-gray-700 text-sm">Risiko bersama</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Custom Bond -->
+            <div class="bg-gradient-to-br from-purple-50 to-white p-6 rounded-2xl border border-purple-200">
+                <div class="w-12 h-12 bg-purple-600 rounded-xl flex items-center justify-center mb-4">
+                    <i class="fas fa-cogs text-white text-xl"></i>
+                </div>
+                <h3 class="text-lg font-bold text-gray-900 mb-3">Custom Bond</h3>
+                <p class="text-gray-700 text-sm mb-4">
+                    Jaminan khusus yang dirancang sesuai dengan kebutuhan unik dari proyek atau transaksi.
+                </p>
+                <div class="space-y-2">
+                    <div class="flex items-start">
+                        <i class="fas fa-shield-alt text-purple-600 mt-1 mr-2 text-sm"></i>
+                        <span class="text-gray-700 text-sm">Disesuaikan kebutuhan</span>
+                    </div>
+                    <div class="flex items-start">
+                        <i class="fas fa-sliders-h text-purple-600 mt-1 mr-2 text-sm"></i>
+                        <span class="text-gray-700 text-sm">Fleksibel dan kustom</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Benefits -->
+<section class="py-20 bg-indigo-50">
+    <div class="container mx-auto px-4">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl font-bold text-gray-900 mb-4">Keunggulan Jaminan Kami</h2>
+            <p class="text-lg text-gray-600">Mengapa memilih asuransi jaminan dari Kokonut</p>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="text-center">
+                <div class="w-20 h-20 bg-indigo-600 rounded-2xl flex items-center justify-center mx-auto mb-6">
+                    <i class="fas fa-certificate text-white text-2xl"></i>
+                </div>
+                <h3 class="text-xl font-bold text-gray-900 mb-4">Kredibilitas Tinggi</h3>
+                <p class="text-gray-600">Didukung oleh perusahaan asuransi ternama dengan peringkat keuangan kuat.</p>
+            </div>
+            
+            <div class="text-center">
+                <div class="w-20 h-20 bg-indigo-600 rounded-2xl flex items-center justify-center mx-auto mb-6">
+                    <i class="fas fa-rocket text-white text-2xl"></i>
+                </div>
+                <h3 class="text-xl font-bold text-gray-900 mb-4">Proses Cepat</h3>
+                <p class="text-gray-600">Penerbitan jaminan yang cepat dan efisien dengan persyaratan yang jelas.</p>
+            </div>
+            
+            <div class="text-center">
+                <div class="w-20 h-20 bg-indigo-600 rounded-2xl flex items-center justify-center mx-auto mb-6">
+                    <i class="fas fa-headset text-white text-2xl"></i>
+                </div>
+                <h3 class="text-xl font-bold text-gray-900 mb-4">Support Profesional</h3>
+                <p class="text-gray-600">Tim ahli siap membantu proses aplikasi dan konsultasi teknis.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Process -->
+<section class="py-20 bg-white">
+    <div class="container mx-auto px-4">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl font-bold text-gray-900 mb-4">Proses Pengajuan</h2>
+            <p class="text-lg text-gray-600">Langkah mudah untuk mendapatkan jaminan</p>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+            <div class="text-center">
+                <div class="w-16 h-16 bg-indigo-100 rounded-2xl flex items-center justify-center mx-auto mb-6">
+                    <div class="text-2xl font-bold text-indigo-600">1</div>
+                </div>
+                <h3 class="text-lg font-bold text-gray-900 mb-3">Konsultasi</h3>
+                <p class="text-gray-600">Diskusikan kebutuhan jaminan dengan tim ahli kami</p>
+            </div>
+            
+            <div class="text-center">
+                <div class="w-16 h-16 bg-indigo-100 rounded-2xl flex items-center justify-center mx-auto mb-6">
+                    <div class="text-2xl font-bold text-indigo-600">2</div>
+                </div>
+                <h3 class="text-lg font-bold text-gray-900 mb-3">Dokumen</h3>
+                <p class="text-gray-600">Siapkan dokumen yang diperlukan untuk pengajuan</p>
+            </div>
+            
+            <div class="text-center">
+                <div class="w-16 h-16 bg-indigo-100 rounded-2xl flex items-center justify-center mx-auto mb-6">
+                    <div class="text-2xl font-bold text-indigo-600">3</div>
+                </div>
+                <h3 class="text-lg font-bold text-gray-900 mb-3">Analisis</h3>
+                <p class="text-gray-600">Proses evaluasi dan analisis risiko oleh underwriter</p>
+            </div>
+            
+            <div class="text-center">
+                <div class="w-16 h-16 bg-indigo-100 rounded-2xl flex items-center justify-center mx-auto mb-6">
+                    <div class="text-2xl font-bold text-indigo-600">4</div>
+                </div>
+                <h3 class="text-lg font-bold text-gray-900 mb-3">Terbit</h3>
+                <p class="text-gray-600">Penerbitan jaminan setelah disetujui</p>
+            </div>
+        </div>
+    </div>
+</section>

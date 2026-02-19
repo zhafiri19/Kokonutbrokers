@@ -1,0 +1,580 @@
+/* Custom CSS for Kokonut Insurance Brokers */
+
+/* Responsive Design for Various Devices */
+
+/* Smartwatch (very small screens) */
+@media (max-width: 320px) {
+    .container {
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+    }
+    
+    h1 {
+        font-size: 1.5rem !important;
+    }
+    
+    h2 {
+        font-size: 1.25rem !important;
+    }
+    
+    .text-3xl {
+        font-size: 1.25rem !important;
+    }
+    
+    .text-2xl {
+        font-size: 1.125rem !important;
+    }
+    
+    .w-24 {
+        width: 4rem !important;
+        height: 4rem !important;
+    }
+    
+    .p-4 {
+        padding: 0.75rem !important;
+    }
+    
+    .mobile-nav-link {
+        font-size: 0.875rem !important;
+        padding: 0.5rem 0.75rem !important;
+    }
+}
+
+/* Smartphone (small screens) */
+@media (min-width: 321px) and (max-width: 767px) {
+    .container {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    
+    main#main-content {
+        padding-top: 60px; /* Smaller padding for mobile */
+    }
+    
+    .hero-section h1 {
+        font-size: 2rem !important;
+    }
+    
+    .hero-section p {
+        font-size: 1rem !important;
+    }
+    
+    .product-card {
+        margin-bottom: 1rem;
+    }
+    
+    .grid-cols-3 {
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+}
+
+/* Tablet (medium screens) */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .container {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+    
+    .grid-cols-3 {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+    
+    .text-4xl {
+        font-size: 2.5rem !important;
+    }
+    
+    .text-3xl {
+        font-size: 2rem !important;
+    }
+}
+
+/* Laptop (large screens) */
+@media (min-width: 1024px) and (max-width: 1439px) {
+    .container {
+        max-width: 1024px;
+    }
+    
+    .grid-cols-3 {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+}
+
+/* Desktop (extra large screens) */
+@media (min-width: 1440px) {
+    .container {
+        max-width: 1200px;
+    }
+    
+    .text-5xl {
+        font-size: 3rem !important;
+    }
+    
+    .text-4xl {
+        font-size: 2.75rem !important;
+    }
+}
+
+/* Touch device optimizations */
+@media (hover: none) and (pointer: coarse) {
+    .nav-link {
+        padding: 0.75rem 1rem;
+    }
+    
+    .product-card {
+        margin-bottom: 1.5rem;
+    }
+    
+    button {
+        min-height: 44px; /* Minimum touch target size */
+        min-width: 44px;
+    }
+}
+
+/* High DPI displays */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    img {
+        image-rendering: -webkit-optimize-contrast;
+        image-rendering: crisp-edges;
+    }
+}
+
+/* Android-specific optimizations */
+@media screen and (-webkit-min-device-pixel-ratio: 1) and (max-width: 767px) {
+    .mobile-nav-link {
+        padding: 0.75rem 1rem !important;
+        font-size: 1rem !important;
+    }
+    
+    #mobile-menu {
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+    }
+    
+    .cta-button {
+        min-height: 48px;
+        font-size: 1rem;
+    }
+}
+
+/* iOS-specific optimizations */
+@supports (-webkit-touch-callout: none) {
+    .mobile-nav-link {
+        -webkit-tap-highlight-color: transparent;
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+    }
+    
+    #mobile-menu {
+        -webkit-overflow-scrolling: touch;
+        -webkit-transform: translateZ(0);
+    }
+    
+    button {
+        -webkit-appearance: none;
+        -webkit-border-radius: 0;
+    }
+}
+
+/* iPad-specific optimizations */
+@media only screen 
+and (min-device-width: 768px) 
+and (max-device-width: 1023px) 
+and (-webkit-min-device-pixel-ratio: 1) {
+    .container {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+    
+    .mobile-nav-link {
+        font-size: 1.125rem;
+        padding: 0.875rem 1.25rem;
+    }
+}
+
+/* iPhone-specific optimizations */
+@media only screen 
+and (min-device-width: 375px) 
+and (max-device-width: 767px) 
+and (-webkit-min-device-pixel-ratio: 2) {
+    main#main-content {
+        padding-top: 70px;
+    }
+    
+    .w-16 {
+        width: 3.5rem;
+        height: 3.5rem;
+    }
+    
+    .text-2xl {
+        font-size: 1.5rem;
+    }
+}
+
+/* Safari-specific fixes */
+_::-webkit-full-page-media, _:future {
+    :root {
+        --safar-fix: 1;
+    }
+}
+
+@media not all and (min-resolution:.001dpcm) {
+    @supports (-webkit-appearance:none) {
+        .navbar {
+            position: -webkit-sticky;
+            position: sticky;
+        }
+    }
+}
+
+/* Main Content Padding */
+main#main-content {
+    padding-top: 80px; /* Account for fixed navbar */
+}
+
+/* Container max-width for better content spacing */
+.container {
+    max-width: 1200px;
+}
+
+/* Smooth Scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Image Styling */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+}
+
+/* Object Fit for Images */
+.object-cover {
+    object-fit: cover;
+}
+
+.object-contain {
+    object-fit: contain;
+}
+
+/* Image Container Styling */
+.image-container {
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+/* Avatar Images */
+.avatar {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.avatar-lg {
+    width: 192px;
+    height: 192px;
+    border: 4px solid #ffffff;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+/* Logo Images */
+.logo-img {
+    height: 64px;
+    object-fit: contain;
+    transition: all 0.3s ease;
+}
+
+/* Card Images */
+.card-image {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 12px 12px 0 0;
+}
+
+/* Hero Images */
+.hero-image {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 16px;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+/* Blog Images */
+.blog-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* Testimonial Images */
+.testimonial-avatar {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #f3f4f6;
+}
+
+/* Responsive Images */
+@media (max-width: 768px) {
+    .hero-image {
+        height: 250px;
+    }
+    
+    .card-image {
+        height: 200px;
+    }
+    
+    .avatar-lg {
+        width: 150px;
+        height: 150px;
+    }
+    
+    .logo-img {
+        height: 48px;
+    }
+}
+
+/* Image Loading Animation */
+img.loading {
+    background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+    background-size: 200% 100%;
+    animation: loading 1.5s infinite;
+}
+
+@keyframes loading {
+    0% {
+        background-position: 200% 0;
+    }
+    100% {
+        background-position: -200% 0;
+    }
+}
+
+/* Image Hover Effects */
+.image-hover {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.image-hover:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Image Grid Layout */
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+}
+
+.image-grid img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+/* Image Caption */
+.image-caption {
+    text-align: center;
+    margin-top: 0.5rem;
+    font-size: 0.875rem;
+    color: #6b7280;
+    font-style: italic;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+/* Navbar Styles */
+.navbar-scrolled {
+    background-color: rgba(6, 78, 59, 0.95);
+    backdrop-filter: blur(10px);
+}
+
+/* Animation Classes */
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.8s ease-in-out;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.slide-up {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.6s ease-out;
+}
+
+.slide-up.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Counter Animation */
+.counter {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #10b981;
+}
+
+/* Card Hover Effects */
+.card-hover {
+    transition: all 0.3s ease;
+}
+
+.card-hover:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+/* Logo Grayscale to Color */
+.logo-grayscale {
+    filter: grayscale(100%);
+    transition: filter 0.3s ease;
+}
+
+.logo-grayscale:hover {
+    filter: grayscale(0%);
+}
+
+/* Glow Effect */
+.glow-effect {
+    transition: all 0.3s ease;
+}
+
+.glow-effect:hover {
+    box-shadow: 0 0 20px rgba(16, 185, 129, 0.3);
+}
+
+/* CTA Button Styles */
+.cta-button {
+    background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+    transition: all 0.3s ease;
+}
+
+.cta-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(16, 185, 129, 0.3);
+}
+
+/* Mobile Menu Animation */
+.mobile-menu-enter {
+    animation: slideDown 0.3s ease-out;
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Parallax Effect */
+.parallax {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Loading Animation */
+.loading {
+    animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+@keyframes pulse {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: .5;
+    }
+}
+
+/* Form Styles */
+.form-input {
+    transition: all 0.3s ease;
+}
+
+.form-input:focus {
+    border-color: #10b981;
+    box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.1);
+}
+
+/* Accordion Styles */
+.accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+}
+
+.accordion-content.active {
+    max-height: 500px;
+}
+
+/* Testimonial Card */
+.testimonial-card {
+    background: linear-gradient(135deg, #ffffff 0%, #f9fafb 100%);
+}
+
+/* Timeline Styles */
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 2px;
+    height: 100%;
+    background: #10b981;
+}
+
+@media (max-width: 768px) {
+    .timeline::before {
+        left: 20px;
+    }
+}
+
+/* Responsive Text */
+@media (max-width: 640px) {
+    .hero-title {
+        font-size: 2rem !important;
+    }
+    
+    .counter {
+        font-size: 2rem;
+    }
+}

@@ -1,0 +1,356 @@
+<!-- Hero Section -->
+<section class="py-20 bg-gradient-to-br from-teal-600 to-teal-700 text-white">
+    <div class="container mx-auto px-4">
+        <div class="flex flex-col lg:flex-row items-center gap-12">
+            <div class="flex-1">
+                <div class="mb-6">
+                    <button onclick="router.navigateTo('produk')" class="inline-flex items-center text-teal-200 hover:text-white transition-colors">
+                        <i class="fas fa-arrow-left mr-2"></i>
+                        Kembali ke Produk
+                    </button>
+                </div>
+                <h1 class="text-4xl md:text-5xl font-bold mb-6">
+                    Asuransi Kesehatan Internasional
+                </h1>
+                <p class="text-xl text-teal-100 mb-8 leading-relaxed">
+                    Perlindungan kesehatan global untuk individu dan keluarga dengan cakupan internasional, memberikan ketenangan pikiran saat bepergian atau tinggal di luar negeri.
+                </p>
+                <div class="flex flex-wrap gap-4">
+                    <button onclick="document.getElementById('detail-produk').scrollIntoView({behavior: 'smooth'})" class="bg-white text-teal-700 hover:bg-teal-50 font-bold px-8 py-4 rounded-full transition-all duration-300">
+                        <i class="fas fa-info-circle mr-2"></i>Lihat Detail
+                    </button>
+                </div>
+            </div>
+            <div class="flex-1">
+                <div class="relative">
+                    <img src="https://via.placeholder.com/600x400/14b8a6/ffffff?text=International+Health" alt="Asuransi Kesehatan Internasional" class="rounded-2xl shadow-2xl">
+                    <div class="absolute -bottom-6 -right-6 bg-white text-teal-700 p-6 rounded-xl shadow-lg">
+                        <div class="text-3xl font-bold">Global</div>
+                        <div class="text-sm text-gray-600">Worldwide Coverage</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Sub Categories -->
+<section class="py-16 bg-gray-50">
+    <div class="container mx-auto px-4">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl font-bold text-gray-900 mb-4">Jenis Perlindungan</h2>
+            <p class="text-lg text-gray-600">Pilih jenis perlindungan yang sesuai dengan kebutuhan Anda</p>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300">
+                <div class="w-16 h-16 bg-teal-100 rounded-2xl flex items-center justify-center mb-6">
+                    <i class="fas fa-truck text-teal-600 text-2xl"></i>
+                </div>
+                <h3 class="text-xl font-bold text-gray-900 mb-4">Asuransi Truck</h3>
+                <p class="text-gray-600 mb-6">Perlindungan khusus untuk pengemudi dan awak truk dalam perjalanan domestik maupun internasional.</p>
+                <ul class="space-y-2 text-sm text-gray-600">
+                    <li><i class="fas fa-check text-teal-500 mr-2"></i>Kecelakaan dalam perjalanan</li>
+                    <li><i class="fas fa-check text-teal-500 mr-2"></i>Kesehatan pengemudi</li>
+                    <li><i class="fas fa-check text-teal-500 mr-2"></i>Evakuasi medis</li>
+                    <li><i class="fas fa-check text-teal-500 mr-2"></i>Repatriasi</li>
+                </ul>
+            </div>
+            
+            <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300">
+                <div class="w-16 h-16 bg-blue-100 rounded-2xl flex items-center justify-center mb-6">
+                    <i class="fas fa-university text-blue-600 text-2xl"></i>
+                </div>
+                <h3 class="text-xl font-bold text-gray-900 mb-4">Bank Garansi</h3>
+                <p class="text-gray-600 mb-6">Jaminan perbankan untuk berbagai keperluan bisnis internasional dan transaksi lintas batas.</p>
+                <ul class="space-y-2 text-sm text-gray-600">
+                    <li><i class="fas fa-check text-teal-500 mr-2"></i>Jaminan pembayaran</li>
+                    <li><i class="fas fa-check text-teal-500 mr-2"></i>Transaksi internasional</li>
+                    <li><i class="fas fa-check text-teal-500 mr-2"></i>Letter of Credit</li>
+                    <li><i class="fas fa-check text-teal-500 mr-2"></i>Trade Finance</li>
+                </ul>
+            </div>
+            
+            <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300">
+                <div class="w-16 h-16 bg-purple-100 rounded-2xl flex items-center justify-center mb-6">
+                    <i class="fas fa-certificate text-purple-600 text-2xl"></i>
+                </div>
+                <h3 class="text-xl font-bold text-gray-900 mb-4">Asuransi Jaminan Pelaksanaan</h3>
+                <p class="text-gray-600 mb-6">Jaminan untuk pelaksanaan kontrak internasional dan proyek lintas negara.</p>
+                <ul class="space-y-2 text-sm text-gray-600">
+                    <li><i class="fas fa-check text-teal-500 mr-2"></i>Performance Bond</li>
+                    <li><i class="fas fa-check text-teal-500 mr-2"></i>Advance Payment</li>
+                    <li><i class="fas fa-check text-teal-500 mr-2"></i>Maintenance Bond</li>
+                    <li><i class="fas fa-check text-teal-500 mr-2"></i>Custom Bond</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Coverage Features -->
+<section id="detail-produk" class="py-20 bg-white">
+    <div class="container mx-auto px-4">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl font-bold text-gray-900 mb-4">Fitur Perlindungan</h2>
+            <p class="text-lg text-gray-600">Keunggulan asuransi kesehatan internasional kami</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Global Coverage -->
+            <div class="bg-gradient-to-br from-teal-50 to-white p-8 rounded-2xl border border-teal-200">
+                <div class="w-16 h-16 bg-teal-600 rounded-2xl flex items-center justify-center mx-auto mb-6">
+                    <i class="fas fa-globe text-white text-2xl"></i>
+                </div>
+                <h3 class="text-xl font-bold text-gray-900 mb-4 text-center">Cakupan Global</h3>
+                <p class="text-gray-700 text-center mb-6">
+                    Perlindungan kesehatan di seluruh dunia dengan jaringan rumah sakit dan fasilitas medis internasional.
+                </p>
+                <ul class="space-y-3">
+                    <li class="flex items-center">
+                        <i class="fas fa-check-circle text-teal-600 mr-3"></i>
+                        <span class="text-gray-700">Rumah sakit rekanan global</span>
+                    </li>
+                    <li class="flex items-center">
+                        <i class="fas fa-check-circle text-teal-600 mr-3"></i>
+                        <span class="text-gray-700">Layanan 24/7</span>
+                    </li>
+                    <li class="flex items-center">
+                        <i class="fas fa-check-circle text-teal-600 mr-3"></i>
+                        <span class="text-gray-700">Multi-bahasa</span>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Medical Evacuation -->
+            <div class="bg-gradient-to-br from-blue-50 to-white p-8 rounded-2xl border border-blue-200">
+                <div class="w-16 h-16 bg-blue-600 rounded-2xl flex items-center justify-center mx-auto mb-6">
+                    <i class="fas fa-helicopter text-white text-2xl"></i>
+                </div>
+                <h3 class="text-xl font-bold text-gray-900 mb-4 text-center">Evakuasi Medis</h3>
+                <p class="text-gray-700 text-center mb-6">
+                    Layanan evakuasi medis darurat ke fasilitas kesehatan terdekat atau repatriasi ke negara asal.
+                </p>
+                <ul class="space-y-3">
+                    <li class="flex items-center">
+                        <i class="fas fa-check-circle text-blue-600 mr-3"></i>
+                        <span class="text-gray-700">Helikopter medis</span>
+                    </li>
+                    <li class="flex items-center">
+                        <i class="fas fa-check-circle text-blue-600 mr-3"></i>
+                        <span class="text-gray-700">Ambulans udara</span>
+                    </li>
+                    <li class="flex items-center">
+                        <i class="fas fa-check-circle text-blue-600 mr-3"></i>
+                        <span class="text-gray-700">Tim medis profesional</span>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Telemedicine -->
+            <div class="bg-gradient-to-br from-purple-50 to-white p-8 rounded-2xl border border-purple-200">
+                <div class="w-16 h-16 bg-purple-600 rounded-2xl flex items-center justify-center mx-auto mb-6">
+                    <i class="fas fa-video text-white text-2xl"></i>
+                </div>
+                <h3 class="text-xl font-bold text-gray-900 mb-4 text-center">Telemedicine</h3>
+                <p class="text-gray-700 text-center mb-6">
+                    Konsultasi medis jarak jauh dengan dokter berpengalaman melalui video call atau telepon.
+                </p>
+                <ul class="space-y-3">
+                    <li class="flex items-center">
+                        <i class="fas fa-check-circle text-purple-600 mr-3"></i>
+                        <span class="text-gray-700">Konsultasi 24/7</span>
+                    </li>
+                    <li class="flex items-center">
+                        <i class="fas fa-check-circle text-purple-600 mr-3"></i>
+                        <span class="text-gray-700">Resep elektronik</span>
+                    </li>
+                    <li class="flex items-center">
+                        <i class="fas fa-check-circle text-purple-600 mr-3"></i>
+                        <span class="text-gray-700">Spesialis berbagai bidang</span>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Dental & Vision -->
+            <div class="bg-gradient-to-br from-green-50 to-white p-8 rounded-2xl border border-green-200">
+                <div class="w-16 h-16 bg-green-600 rounded-2xl flex items-center justify-center mx-auto mb-6">
+                    <i class="fas fa-tooth text-white text-2xl"></i>
+                </div>
+                <h3 class="text-xl font-bold text-gray-900 mb-4 text-center">Gigi & Mata</h3>
+                <p class="text-gray-700 text-center mb-6">
+                    Perlindungan untuk perawatan gigi dan kesehatan mata dengan jaringan dokter spesialis global.
+                </p>
+                <ul class="space-y-3">
+                    <li class="flex items-center">
+                        <i class="fas fa-check-circle text-green-600 mr-3"></i>
+                        <span class="text-gray-700">Pemeriksaan rutin</span>
+                    </li>
+                    <li class="flex items-center">
+                        <i class="fas fa-check-circle text-green-600 mr-3"></i>
+                        <span class="text-gray-700">Perawatan gigi</span>
+                    </li>
+                    <li class="flex items-center">
+                        <i class="fas fa-check-circle text-green-600 mr-3"></i>
+                        <span class="text-gray-700">Kacamata & lensa</span>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Mental Health -->
+            <div class="bg-gradient-to-br from-orange-50 to-white p-8 rounded-2xl border border-orange-200">
+                <div class="w-16 h-16 bg-orange-600 rounded-2xl flex items-center justify-center mx-auto mb-6">
+                    <i class="fas fa-brain text-white text-2xl"></i>
+                </div>
+                <h3 class="text-xl font-bold text-gray-900 mb-4 text-center">Kesehatan Mental</h3>
+                <p class="text-gray-700 text-center mb-6">
+                    Dukungan kesehatan mental dengan akses ke konselor dan terapis berlisensi internasional.
+                </p>
+                <ul class="space-y-3">
+                    <li class="flex items-center">
+                        <i class="fas fa-check-circle text-orange-600 mr-3"></i>
+                        <span class="text-gray-700">Konseling online</span>
+                    </li>
+                    <li class="flex items-center">
+                        <i class="fas fa-check-circle text-orange-600 mr-3"></i>
+                        <span class="text-gray-700">Therapy sessions</span>
+                    </li>
+                    <li class="flex items-center">
+                        <i class="fas fa-check-circle text-orange-600 mr-3"></i>
+                        <span class="text-gray-700">Crisis support</span>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Wellness -->
+            <div class="bg-gradient-to-br from-pink-50 to-white p-8 rounded-2xl border border-pink-200">
+                <div class="w-16 h-16 bg-pink-600 rounded-2xl flex items-center justify-center mx-auto mb-6">
+                    <i class="fas fa-heart text-white text-2xl"></i>
+                </div>
+                <h3 class="text-xl font-bold text-gray-900 mb-4 text-center">Wellness Program</h3>
+                <p class="text-gray-700 text-center mb-6">
+                    Program kesehatan dan kebugaran untuk menjaga kualitas hidup selama tinggal di luar negeri.
+                </p>
+                <ul class="space-y-3">
+                    <li class="flex items-center">
+                        <i class="fas fa-check-circle text-pink-600 mr-3"></i>
+                        <span class="text-gray-700">Fitness membership</span>
+                    </li>
+                    <li class="flex items-center">
+                        <i class="fas fa-check-circle text-pink-600 mr-3"></i>
+                        <span class="text-gray-700">Health screening</span>
+                    </li>
+                    <li class="flex items-center">
+                        <i class="fas fa-check-circle text-pink-600 mr-3"></i>
+                        <span class="text-gray-700">Nutrition guidance</span>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Repatriation -->
+            <div class="bg-gradient-to-br from-indigo-50 to-white p-8 rounded-2xl border border-indigo-200">
+                <div class="w-16 h-16 bg-indigo-600 rounded-2xl flex items-center justify-center mx-auto mb-6">
+                    <i class="fas fa-plane text-white text-2xl"></i>
+                </div>
+                <h3 class="text-xl font-bold text-gray-900 mb-4 text-center">Repatriasi</h3>
+                <p class="text-gray-700 text-center mb-6">
+                    Pengembalian jenazah atau pasien ke negara asal dengan pengaturan lengkap dan dukungan keluarga.
+                </p>
+                <ul class="space-y-3">
+                    <li class="flex items-center">
+                        <i class="fas fa-check-circle text-indigo-600 mr-3"></i>
+                        <span class="text-gray-700">Pengembalian jenazah</span>
+                    </li>
+                    <li class="flex items-center">
+                        <i class="fas fa-check-circle text-indigo-600 mr-3"></i>
+                        <span class="text-gray-700">Dokumen lengkap</span>
+                    </li>
+                    <li class="flex items-center">
+                        <i class="fas fa-check-circle text-indigo-600 mr-3"></i>
+                        <span class="text-gray-700">Dukungan keluarga</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Benefits -->
+<section class="py-20 bg-teal-50">
+    <div class="container mx-auto px-4">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl font-bold text-gray-900 mb-4">Mengapa Memilih Kami?</h2>
+            <p class="text-lg text-gray-600">Keunggulan asuransi kesehatan internasional Kokonut</p>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="text-center">
+                <div class="w-20 h-20 bg-teal-600 rounded-2xl flex items-center justify-center mx-auto mb-6">
+                    <i class="fas fa-network-wired text-white text-2xl"></i>
+                </div>
+                <h3 class="text-xl font-bold text-gray-900 mb-4">Jaringan Global</h3>
+                <p class="text-gray-600">Akses ke lebih dari 40,000 rumah sakit dan fasilitas medis di seluruh dunia.</p>
+            </div>
+            
+            <div class="text-center">
+                <div class="w-20 h-20 bg-teal-600 rounded-2xl flex items-center justify-center mx-auto mb-6">
+                    <i class="fas fa-headset text-white text-2xl"></i>
+                </div>
+                <h3 class="text-xl font-bold text-gray-900 mb-4">Support 24/7</h3>
+                <p class="text-gray-600">Tim multibahasa siap membantu 24 jam setiap hari untuk keadaan darurat.</p>
+            </div>
+            
+            <div class="text-center">
+                <div class="w-20 h-20 bg-teal-600 rounded-2xl flex items-center justify-center mx-auto mb-6">
+                    <i class="fas fa-mobile-alt text-white text-2xl"></i>
+                </div>
+                <h3 class="text-xl font-bold text-gray-900 mb-4">Digital Access</h3>
+                <p class="text-gray-600">Aplikasi mobile untuk akses kartu digital, klaim, dan informasi kesehatan.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Target Audience -->
+<section class="py-20 bg-white">
+    <div class="container mx-auto px-4">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl font-bold text-gray-900 mb-4">Cocok Untuk</h2>
+            <p class="text-lg text-gray-600">Individu dan keluarga yang membutuhkan perlindungan kesehatan internasional</p>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div class="text-center bg-gray-50 p-6 rounded-xl">
+                <div class="w-16 h-16 bg-teal-100 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                    <i class="fas fa-briefcase text-teal-600 text-xl"></i>
+                </div>
+                <h3 class="text-lg font-bold text-gray-900 mb-2">Ekspatriat</h3>
+                <p class="text-gray-600 text-sm">Profesional yang bekerja di luar negeri</p>
+            </div>
+            
+            <div class="text-center bg-gray-50 p-6 rounded-xl">
+                <div class="w-16 h-16 bg-teal-100 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                    <i class="fas fa-graduation-cap text-teal-600 text-xl"></i>
+                </div>
+                <h3 class="text-lg font-bold text-gray-900 mb-2">Pelajar</h3>
+                <p class="text-gray-600 text-sm">Mahasiswa yang belajar di luar negeri</p>
+            </div>
+            
+            <div class="text-center bg-gray-50 p-6 rounded-xl">
+                <div class="w-16 h-16 bg-teal-100 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                    <i class="fas fa-plane text-teal-600 text-xl"></i>
+                </div>
+                <h3 class="text-lg font-bold text-gray-900 mb-2">Traveler</h3>
+                <p class="text-gray-600 text-sm">Wisatawan dan backpacker</p>
+            </div>
+            
+            <div class="text-center bg-gray-50 p-6 rounded-xl">
+                <div class="w-16 h-16 bg-teal-100 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                    <i class="fas fa-users text-teal-600 text-xl"></i>
+                </div>
+                <h3 class="text-lg font-bold text-gray-900 mb-2">Keluarga</h3>
+                <p class="text-gray-600 text-sm">Keluarga yang tinggal di luar negeri</p>
+            </div>
+        </div>
+    </div>
+</section>

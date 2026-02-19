@@ -1,0 +1,327 @@
+<!-- Hero Section -->
+<section class="py-20 bg-gradient-to-br from-emerald-50 to-white">
+    <div class="container mx-auto px-4">
+        <div class="text-center fade-in">
+            <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+                Frequently Asked <span class="text-emerald-600">Questions</span>
+            </h1>
+            <p class="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+                Temukan jawaban untuk pertanyaan yang sering diajukan tentang layanan dan produk asuransi kami
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- Search Section -->
+<section class="py-12 bg-white">
+    <div class="container mx-auto px-4">
+        <div class="max-w-2xl mx-auto">
+            <div class="relative">
+                <input 
+                    type="text" 
+                    id="faqSearch" 
+                    placeholder="Cari pertanyaan..."
+                    class="w-full px-6 py-4 pr-12 border border-gray-300 rounded-full focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 text-lg"
+                >
+                <button class="absolute right-2 top-1/2 transform -translate-y-1/2 bg-emerald-600 text-white p-3 rounded-full hover:bg-emerald-700 transition-colors">
+                    <i class="fas fa-search"></i>
+                </button>
+            </div>
+            <div id="searchResults" class="mt-4 text-center text-gray-600 hidden">
+                <p>Menampilkan <span id="resultCount">0</span> hasil untuk "<span id="searchTerm"></span>"</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- FAQ Categories -->
+<section class="py-12 bg-gradient-to-br from-emerald-50 to-white">
+    <div class="container mx-auto px-4">
+        <div class="flex flex-wrap justify-center gap-4 mb-12">
+            <button class="category-filter active bg-emerald-600 text-white px-6 py-3 rounded-full font-semibold transition-all duration-300" data-category="all">
+                Semua Kategori
+            </button>
+            <button class="category-filter bg-white text-gray-700 border border-gray-300 px-6 py-3 rounded-full font-semibold hover:bg-emerald-600 hover:text-white transition-all duration-300" data-category="umum">
+                Umum
+            </button>
+            <button class="category-filter bg-white text-gray-700 border border-gray-300 px-6 py-3 rounded-full font-semibold hover:bg-emerald-600 hover:text-white transition-all duration-300" data-category="produk">
+                Produk
+            </button>
+            <button class="category-filter bg-white text-gray-700 border border-gray-300 px-6 py-3 rounded-full font-semibold hover:bg-emerald-600 hover:text-white transition-all duration-300" data-category="klaim">
+                Klaim
+            </button>
+            <button class="category-filter bg-white text-gray-700 border border-gray-300 px-6 py-3 rounded-full font-semibold hover:bg-emerald-600 hover:text-white transition-all duration-300" data-category="broker">
+                Tentang Broker
+            </button>
+        </div>
+    </div>
+</section>
+
+<!-- FAQ Content -->
+<section class="py-20 bg-white">
+    <div class="container mx-auto px-4">
+        <div class="max-w-4xl mx-auto">
+            
+            <!-- Umum Category -->
+            <div class="faq-category mb-12" data-category="umum">
+                <h2 class="text-2xl font-bold text-gray-900 mb-6 flex items-center">
+                    <i class="fas fa-question-circle text-emerald-600 mr-3"></i>
+                    Pertanyaan Umum
+                </h2>
+                <div class="space-y-4">
+                    <div class="faq-item bg-white rounded-xl shadow-lg overflow-hidden fade-in border border-gray-200">
+                        <button class="faq-toggle w-full p-6 text-left flex justify-between items-center hover:bg-emerald-50 transition-colors">
+                            <h3 class="font-semibold text-lg text-gray-900">Apa itu Kokonut Insurance Brokers?</h3>
+                            <i class="fas fa-chevron-down text-emerald-600 transition-transform"></i>
+                        </button>
+                        <div class="faq-content hidden px-6 pb-6">
+                            <p class="text-gray-600">
+                                Kokonut Insurance Brokers adalah perusahaan pialang asuransi profesional yang telah beroperasi sejak 2009. Kami membantu individu dan perusahaan menemukan produk asuransi terbaik dari berbagai perusahaan asuransi ternama di Indonesia dengan harga kompetitif dan layanan optimal.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item bg-white rounded-xl shadow-lg overflow-hidden fade-in border border-gray-200">
+                        <button class="faq-toggle w-full p-6 text-left flex justify-between items-center hover:bg-emerald-50 transition-colors">
+                            <h3 class="font-semibold text-lg text-gray-900">Berapa lama perusahaan sudah berdiri?</h3>
+                            <i class="fas fa-chevron-down text-emerald-600 transition-transform"></i>
+                        </button>
+                        <div class="faq-content hidden px-6 pb-6">
+                            <p class="text-gray-600">
+                                Kokonut Insurance Brokers telah berdiri sejak tahun 2009 dan memiliki pengalaman lebih dari 15 tahun dalam industri asuransi di Indonesia. Selama ini kami telah melayani ribuan klien dari berbagai sektor industri.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item bg-white rounded-xl shadow-lg overflow-hidden fade-in border border-gray-200">
+                        <button class="faq-toggle w-full p-6 text-left flex justify-between items-center hover:bg-emerald-50 transition-colors">
+                            <h3 class="font-semibold text-lg text-gray-900">Apakah perusahaan sudah tersertifikasi?</h3>
+                            <i class="fas fa-chevron-down text-emerald-600 transition-transform"></i>
+                        </button>
+                        <div class="faq-content hidden px-6 pb-6">
+                            <p class="text-gray-600">
+                                Ya, kami tersertifikasi dan diakui oleh OJK (Otoritas Jasa Keuangan), Kementerian Hukum dan HAM, serta menjadi anggota resmi APPARINDO (Asosiasi Pialang Asuransi Reasuransi Indonesia) dan APARI (Asosiasi Pialang Asuransi Indonesia).
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Produk Category -->
+            <div class="faq-category mb-12" data-category="produk">
+                <h2 class="text-2xl font-bold text-gray-900 mb-6 flex items-center">
+                    <i class="fas fa-shield-alt text-emerald-600 mr-3"></i>
+                    Produk Asuransi
+                </h2>
+                <div class="space-y-4">
+                    <div class="faq-item bg-white rounded-xl shadow-lg overflow-hidden fade-in border border-gray-200">
+                        <button class="faq-toggle w-full p-6 text-left flex justify-between items-center hover:bg-emerald-50 transition-colors">
+                            <h3 class="font-semibold text-lg text-gray-900">Produk asuransi apa saja yang tersedia?</h3>
+                            <i class="fas fa-chevron-down text-emerald-600 transition-transform"></i>
+                        </button>
+                        <div class="faq-content hidden px-6 pb-6">
+                            <p class="text-gray-600">
+                                Kami menyediakan berbagai jenis asuransi meliputi: Asuransi Alat Berat, Asuransi Jaminan Proyek, Asuransi Kendaraan, Asuransi Kredit, Bank Garansi, Asuransi Kesehatan Karyawan, Property All Risk, dan berbagai produk asuransi lainnya sesuai kebutuhan Anda.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item bg-white rounded-xl shadow-lg overflow-hidden fade-in border border-gray-200">
+                        <button class="faq-toggle w-full p-6 text-left flex justify-between items-center hover:bg-emerald-50 transition-colors">
+                            <h3 class="font-semibold text-lg text-gray-900">Bagaimana cara memilih produk yang tepat?</h3>
+                            <i class="fas fa-chevron-down text-emerald-600 transition-transform"></i>
+                        </button>
+                        <div class="faq-content hidden px-6 pb-6">
+                            <p class="text-gray-600">
+                                Tim profesional kami akan membantu Anda menganalisis kebutuhan, risiko, dan budget Anda. Kami akan memberikan rekomendasi produk yang paling sesuai dengan perlindungan yang Anda butuhkan dari 50+ partner asuransi kami.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item bg-white rounded-xl shadow-lg overflow-hidden fade-in border border-gray-200">
+                        <button class="faq-toggle w-full p-6 text-left flex justify-between items-center hover:bg-emerald-50 transition-colors">
+                            <h3 class="font-semibold text-lg text-gray-900">Apakah premi bisa dinegosiasikan?</h3>
+                            <i class="fas fa-chevron-down text-emerald-600 transition-transform"></i>
+                        </button>
+                        <div class="faq-content hidden px-6 pb-6">
+                            <p class="text-gray-600">
+                                Ya, sebagai broker kami memiliki hubungan baik dengan berbagai perusahaan asuransi dan bisa membantu negosiasi premium untuk mendapatkan harga terbaik sesuai coverage yang Anda butuhkan.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Klaim Category -->
+            <div class="faq-category mb-12" data-category="klaim">
+                <h2 class="text-2xl font-bold text-gray-900 mb-6 flex items-center">
+                    <i class="fas fa-file-medical text-emerald-600 mr-3"></i>
+                    Proses Klaim
+                </h2>
+                <div class="space-y-4">
+                    <div class="faq-item bg-white rounded-xl shadow-lg overflow-hidden fade-in border border-gray-200">
+                        <button class="faq-toggle w-full p-6 text-left flex justify-between items-center hover:bg-emerald-50 transition-colors">
+                            <h3 class="font-semibold text-lg text-gray-900">Bagaimana cara mengajukan klaim?</h3>
+                            <i class="fas fa-chevron-down text-emerald-600 transition-transform"></i>
+                        </button>
+                        <div class="faq-content hidden px-6 pb-6">
+                            <p class="text-gray-600">
+                                Anda dapat menghubungi tim klaim kami melalui telepon, email, atau WhatsApp. Kami akan membantu Anda dari awal hingga proses klaim selesai, termasuk pengumpulan dokumen dan komunikasi dengan perusahaan asuransi.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item bg-white rounded-xl shadow-lg overflow-hidden fade-in border border-gray-200">
+                        <button class="faq-toggle w-full p-6 text-left flex justify-between items-center hover:bg-emerald-50 transition-colors">
+                            <h3 class="font-semibold text-lg text-gray-900">Berapa lama proses klaim?</h3>
+                            <i class="fas fa-chevron-down text-emerald-600 transition-transform"></i>
+                        </button>
+                        <div class="faq-content hidden px-6 pb-6">
+                            <p class="text-gray-600">
+                                Waktu proses klaim bervariasi tergantung jenis klaim dan kelengkapan dokumen. Namun dengan bantuan broker profesional, proses biasanya lebih cepat dan lancar. Klaim sederhana bisa selesai dalam 3-7 hari kerja.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item bg-white rounded-xl shadow-lg overflow-hidden fade-in border border-gray-200">
+                        <button class="faq-toggle w-full p-6 text-left flex justify-between items-center hover:bg-emerald-50 transition-colors">
+                            <h3 class="font-semibold text-lg text-gray-900">Apakah klaim dijamin cair?</h3>
+                            <i class="fas fa-chevron-down text-emerald-600 transition-transform"></i>
+                        </button>
+                        <div class="faq-content hidden px-6 pb-6">
+                            <p class="text-gray-600">
+                                Kami tidak bisa menjamin 100% klaim cair, namun dengan bantuan broker profesional, proses klaim akan lebih mudah dan peluang cair lebih tinggi karena kami memastikan polis sesuai kebutuhan dan membantu proses administrasi dengan benar.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Broker Category -->
+            <div class="faq-category mb-12" data-category="broker">
+                <h2 class="text-2xl font-bold text-gray-900 mb-6 flex items-center">
+                    <i class="fas fa-user-tie text-emerald-600 mr-3"></i>
+                    Tentang Broker
+                </h2>
+                <div class="space-y-4">
+                    <div class="faq-item bg-white rounded-xl shadow-lg overflow-hidden fade-in border border-gray-200">
+                        <button class="faq-toggle w-full p-6 text-left flex justify-between items-center hover:bg-emerald-50 transition-colors">
+                            <h3 class="font-semibold text-lg text-gray-900">Apa bedanya broker dengan agen asuransi?</h3>
+                            <i class="fas fa-chevron-down text-emerald-600 transition-transform"></i>
+                        </button>
+                        <div class="faq-content hidden px-6 pb-6">
+                            <p class="text-gray-600">
+                                Broker bekerja untuk kepentingan nasabah dan independen, sedangkan agen bekerja untuk perusahaan asuransi tertentu. Broker akan membantu Anda membandingkan produk dari berbagai perusahaan untuk mendapatkan yang terbaik, sementara agen hanya menjual produk dari satu perusahaan.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item bg-white rounded-xl shadow-lg overflow-hidden fade-in border border-gray-200">
+                        <button class="faq-toggle w-full p-6 text-left flex justify-between items-center hover:bg-emerald-50 transition-colors">
+                            <h3 class="font-semibold text-lg text-gray-900">Apakah ada biaya layanan broker?</h3>
+                            <i class="fas fa-chevron-down text-emerald-600 transition-transform"></i>
+                        </button>
+                        <div class="faq-content hidden px-6 pb-6">
+                            <p class="text-gray-600">
+                                Layanan broker biasanya tidak dikenakan biaya tambahan kepada nasabah karena kami mendapatkan komisi dari perusahaan asuransi. Anda mendapatkan layanan profesional tanpa biaya ekstra.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item bg-white rounded-xl shadow-lg overflow-hidden fade-in border border-gray-200">
+                        <button class="faq-toggle w-full p-6 text-left flex justify-between items-center hover:bg-emerald-50 transition-colors">
+                            <h3 class="font-semibold text-lg text-gray-900">Apakah konsultasi berbayar?</h3>
+                            <i class="fas fa-chevron-down text-emerald-600 transition-transform"></i>
+                        </button>
+                        <div class="faq-content hidden px-6 pb-6">
+                            <p class="text-gray-600">
+                                Konsultasi awal dengan kami gratis tanpa biaya. Kami akan membantu Anda memahami kebutuhan asuransi dan memberikan rekomendasi produk yang sesuai tanpa ada kewajiban untuk membeli.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- Still Have Questions Section -->
+<section class="py-20 bg-gradient-to-r from-emerald-600 to-emerald-700">
+    <div class="container mx-auto px-4 text-center">
+        <div class="fade-in">
+            <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">
+                Masih Punya Pertanyaan?
+            </h2>
+            <p class="text-xl text-emerald-100 mb-8 max-w-2xl mx-auto">
+                Tim profesional kami siap membantu menjawab semua pertanyaan Anda tentang asuransi
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="#kontak" class="bg-white text-emerald-700 px-8 py-4 rounded-full font-semibold text-lg hover:bg-emerald-50 transition-all duration-300 shadow-lg">
+                    <i class="fas fa-comments mr-2"></i>
+                    Konsultasi Gratis
+                </a>
+                <a href="tel:+622112345678" class="bg-emerald-800 text-white px-8 py-4 rounded-full font-semibold text-lg hover:bg-emerald-900 transition-all duration-300">
+                    <i class="fas fa-phone mr-2"></i>
+                    Hubungi Kami
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Related Resources -->
+<section class="py-20 bg-white">
+    <div class="container mx-auto px-4">
+        <div class="text-center mb-12 fade-in">
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+                Sumber Daya <span class="text-emerald-600">Terkait</span>
+            </h2>
+            <p class="text-lg text-gray-600">Pelajari lebih lanjut tentang asuransi dan perlindungan</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="card-hover bg-white rounded-xl shadow-lg overflow-hidden fade-in border border-gray-200">
+                <div class="bg-gradient-to-r from-emerald-600 to-emerald-700 p-6 text-white">
+                    <i class="fas fa-download text-3xl mb-3"></i>
+                    <h3 class="text-xl font-bold">Company Profile</h3>
+                </div>
+                <div class="p-6">
+                    <p class="text-gray-600 mb-4">Download company profile lengkap kami untuk informasi lebih detail tentang layanan dan produk.</p>
+                    <button class="bg-emerald-600 hover:bg-emerald-700 text-white px-6 py-2 rounded-lg font-semibold transition-all duration-300">
+                        <i class="fas fa-file-pdf mr-2"></i>
+                        Download PDF
+                    </button>
+                </div>
+            </div>
+
+            <div class="card-hover bg-white rounded-xl shadow-lg overflow-hidden fade-in border border-gray-200">
+                <div class="bg-gradient-to-r from-emerald-600 to-emerald-700 p-6 text-white">
+                    <i class="fas fa-book text-3xl mb-3"></i>
+                    <h3 class="text-xl font-bold">Panduan Asuransi</h3>
+                </div>
+                <div class="p-6">
+                    <p class="text-gray-600 mb-4">Panduan lengkap untuk memahami berbagai jenis asuransi dan cara memilih yang tepat.</p>
+                    <button class="bg-emerald-600 hover:bg-emerald-700 text-white px-6 py-2 rounded-lg font-semibold transition-all duration-300">
+                        <i class="fas fa-book-open mr-2"></i>
+                        Baca Panduan
+                    </button>
+                </div>
+            </div>
+
+            <div class="card-hover bg-white rounded-xl shadow-lg overflow-hidden fade-in border border-gray-200">
+                <div class="bg-gradient-to-r from-emerald-600 to-emerald-700 p-6 text-white">
+                    <i class="fas fa-video text-3xl mb-3"></i>
+                    <h3 class="text-xl font-bold">Video Edukasi</h3>
+                </div>
+                <div class="p-6">
+                    <p class="text-gray-600 mb-4">Tonton video edukasi tentang pentingnya asuransi dan tips memilih broker terpercaya.</p>
+                    <button class="bg-emerald-600 hover:bg-emerald-700 text-white px-6 py-2 rounded-lg font-semibold transition-all duration-300">
+                        <i class="fas fa-play mr-2"></i>
+                        Tonton Video
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

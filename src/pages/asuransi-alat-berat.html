@@ -1,0 +1,227 @@
+<!-- Hero Section -->
+<section class="py-20 bg-gradient-to-br from-emerald-600 to-emerald-700 text-white">
+    <div class="container mx-auto px-4">
+        <div class="flex flex-col lg:flex-row items-center gap-12">
+            <div class="flex-1">
+                <div class="mb-6">
+                    <button onclick="router.navigateTo('produk')" class="inline-flex items-center text-emerald-200 hover:text-white transition-colors">
+                        <i class="fas fa-arrow-left mr-2"></i>
+                        Kembali ke Produk
+                    </button>
+                </div>
+                <h1 class="text-4xl md:text-5xl font-bold mb-6">
+                    Asuransi Alat Berat
+                </h1>
+                <p class="text-xl text-emerald-100 mb-8 leading-relaxed">
+                    Proteksi komprehensif untuk alat berat dan mesin industri Anda dari berbagai risiko kerusakan, kehilangan, dan tanggung jawab hukum.
+                </p>
+                <div class="flex flex-wrap gap-4">
+                    <button onclick="document.getElementById('detail-produk').scrollIntoView({behavior: 'smooth'})" class="border-2 border-white text-white hover:bg-white hover:text-emerald-700 font-bold px-8 py-4 rounded-full transition-all duration-300">
+                        <i class="fas fa-info-circle mr-2"></i>Lihat Detail
+                    </button>
+                </div>
+            </div>
+            <div class="flex-1">
+                <div class="relative">
+                    <img src="https://via.placeholder.com/600x400/10b981/ffffff?text=Alat+Berat" alt="Asuransi Alat Berat" class="rounded-2xl shadow-2xl">
+                    <div class="absolute -bottom-6 -right-6 bg-white text-emerald-700 p-6 rounded-xl shadow-lg">
+                        <div class="text-3xl font-bold">0.5% - 2%</div>
+                        <div class="text-sm text-gray-600">Premi per tahun</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Sub Categories -->
+<section class="py-16 bg-gray-50">
+    <div class="container mx-auto px-4">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl font-bold text-gray-900 mb-4">Jenis Perlindungan</h2>
+            <p class="text-lg text-gray-600">Pilih jenis perlindungan yang sesuai dengan kebutuhan Anda</p>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300">
+                <div class="w-16 h-16 bg-emerald-100 rounded-2xl flex items-center justify-center mb-6">
+                    <i class="fas fa-industry text-emerald-600 text-2xl"></i>
+                </div>
+                <h3 class="text-xl font-bold text-gray-900 mb-4">Asuransi Pabrik</h3>
+                <p class="text-gray-600 mb-6">Proteksi untuk mesin-mesin industri dan peralatan produksi di pabrik dari kerusakan operasional.</p>
+                <ul class="space-y-2 text-sm text-gray-600">
+                    <li><i class="fas fa-check text-emerald-500 mr-2"></i>Mesin produksi</li>
+                    <li><i class="fas fa-check text-emerald-500 mr-2"></i>Peralatan pabrik</li>
+                    <li><i class="fas fa-check text-emerald-500 mr-2"></i>Sistem elektrik</li>
+                </ul>
+            </div>
+            
+            <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300">
+                <div class="w-16 h-16 bg-blue-100 rounded-2xl flex items-center justify-center mb-6">
+                    <i class="fas fa-heartbeat text-blue-600 text-2xl"></i>
+                </div>
+                <h3 class="text-xl font-bold text-gray-900 mb-4">Asuransi Kesehatan</h3>
+                <p class="text-gray-600 mb-6">Perlindungan kesehatan untuk operator dan pekerja yang mengoperasikan alat berat.</p>
+                <ul class="space-y-2 text-sm text-gray-600">
+                    <li><i class="fas fa-check text-emerald-500 mr-2"></i>Santunan kecelakaan</li>
+                    <li><i class="fas fa-check text-emerald-500 mr-2"></i>Biaya pengobatan</li>
+                    <li><i class="fas fa-check text-emerald-500 mr-2"></i>Cacat total tetap</li>
+                </ul>
+            </div>
+            
+            <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300">
+                <div class="w-16 h-16 bg-red-100 rounded-2xl flex items-center justify-center mb-6">
+                    <i class="fas fa-fire text-red-600 text-2xl"></i>
+                </div>
+                <h3 class="text-xl font-bold text-gray-900 mb-4">Kebakaran/Harta Benda</h3>
+                <p class="text-gray-600 mb-6">Proteksi terhadap risiko kebakaran dan kerusakan harta benda lainnya.</p>
+                <ul class="space-y-2 text-sm text-gray-600">
+                    <li><i class="fas fa-check text-emerald-500 mr-2"></i>Kebakaran</li>
+                    <li><i class="fas fa-check text-emerald-500 mr-2"></i>Sambaran petir</li>
+                    <li><i class="fas fa-check text-emerald-500 mr-2"></i>Ledakan</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Detail Produk -->
+<section id="detail-produk" class="py-20 bg-white">
+    <div class="container mx-auto px-4">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl font-bold text-gray-900 mb-4">Detail Produk</h2>
+            <p class="text-lg text-gray-600">Pemahaman lengkap tentang perlindungan yang kami tawarkan</p>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+            <!-- Comprehensive -->
+            <div class="bg-gradient-to-br from-emerald-50 to-white p-8 rounded-2xl border border-emerald-200">
+                <div class="flex items-center mb-6">
+                    <div class="w-12 h-12 bg-emerald-600 rounded-xl flex items-center justify-center mr-4">
+                        <i class="fas fa-shield-alt text-white text-xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900">Comprehensive</h3>
+                </div>
+                <p class="text-gray-700 mb-6 leading-relaxed">
+                    Menjamin risiko terhadap kerugian/kerusakan sebagian maupun total akibat risiko yang dijamin dalam Polis Asuransi Alat Berat.
+                </p>
+                <div class="space-y-3">
+                    <div class="flex items-start">
+                        <i class="fas fa-check-circle text-emerald-600 mt-1 mr-3"></i>
+                        <span class="text-gray-700">Kerusakan ringan hingga berat</span>
+                    </div>
+                    <div class="flex items-start">
+                        <i class="fas fa-check-circle text-emerald-600 mt-1 mr-3"></i>
+                        <span class="text-gray-700">Biaya perbaikan penggantian suku cadang</span>
+                    </div>
+                    <div class="flex items-start">
+                        <i class="fas fa-check-circle text-emerald-600 mt-1 mr-3"></i>
+                        <span class="text-gray-700">Kerusakan akibat kecelakaan operasional</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Total Loss Only (TLO) -->
+            <div class="bg-gradient-to-br from-blue-50 to-white p-8 rounded-2xl border border-blue-200">
+                <div class="flex items-center mb-6">
+                    <div class="w-12 h-12 bg-blue-600 rounded-xl flex items-center justify-center mr-4">
+                        <i class="fas fa-exclamation-triangle text-white text-xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900">Total Loss Only (TLO)</h3>
+                </div>
+                <p class="text-gray-700 mb-6 leading-relaxed">
+                    Menjamin risiko terhadap kerugian/kerusakan total, yaitu biaya perbaikan unit diperkirakan sama dengan harga unit sesaat sebelum terjadinya kerugian dan akibat hilang karena pencurian.
+                </p>
+                <div class="space-y-3">
+                    <div class="flex items-start">
+                        <i class="fas fa-check-circle text-blue-600 mt-1 mr-3"></i>
+                        <span class="text-gray-700">Kerusakan total (>75% nilai unit)</span>
+                    </div>
+                    <div class="flex items-start">
+                        <i class="fas fa-check-circle text-blue-600 mt-1 mr-3"></i>
+                        <span class="text-gray-700">Kehilangan akibat pencurian</span>
+                    </div>
+                    <div class="flex items-start">
+                        <i class="fas fa-check-circle text-blue-600 mt-1 mr-3"></i>
+                        <span class="text-gray-700">Premi lebih ekonomis</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Perluasan Jaminan -->
+        <div class="mt-16">
+            <h3 class="text-2xl font-bold text-gray-900 mb-8 text-center">Perluasan Jaminan</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="bg-white p-6 rounded-xl shadow-lg border border-gray-200 hover:border-emerald-300 transition-all duration-300">
+                    <div class="w-10 h-10 bg-orange-100 rounded-lg flex items-center justify-center mb-4">
+                        <i class="fas fa-users text-orange-600"></i>
+                    </div>
+                    <h4 class="font-bold text-gray-900 mb-2">RSMD+CC</h4>
+                    <p class="text-sm text-gray-600">Riots, Strikes, Malicious Damage, Civil Commotion</p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-xl shadow-lg border border-gray-200 hover:border-emerald-300 transition-all duration-300">
+                    <div class="w-10 h-10 bg-purple-100 rounded-lg flex items-center justify-center mb-4">
+                        <i class="fas fa-cloud-bolt text-purple-600"></i>
+                    </div>
+                    <h4 class="font-bold text-gray-900 mb-2">AOG</h4>
+                    <p class="text-sm text-gray-600">Act of God - Bencana alam</p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-xl shadow-lg border border-gray-200 hover:border-emerald-300 transition-all duration-300">
+                    <div class="w-10 h-10 bg-green-100 rounded-lg flex items-center justify-center mb-4">
+                        <i class="fas fa-user-injured text-green-600"></i>
+                    </div>
+                    <h4 class="font-bold text-gray-900 mb-2">PA</h4>
+                    <p class="text-sm text-gray-600">Personal Accident - Kecelakaan diri</p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-xl shadow-lg border border-gray-200 hover:border-emerald-300 transition-all duration-300">
+                    <div class="w-10 h-10 bg-red-100 rounded-lg flex items-center justify-center mb-4">
+                        <i class="fas fa-handshake text-red-600"></i>
+                    </div>
+                    <h4 class="font-bold text-gray-900 mb-2">TPL</h4>
+                    <p class="text-sm text-gray-600">Third Party Liability</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Benefits -->
+<section class="py-20 bg-emerald-50">
+    <div class="container mx-auto px-4">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl font-bold text-gray-900 mb-4">Mengapa Memilih Kami?</h2>
+            <p class="text-lg text-gray-600">Keunggulan layanan asuransi alat berat kami</p>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="text-center">
+                <div class="w-20 h-20 bg-emerald-600 rounded-2xl flex items-center justify-center mx-auto mb-6">
+                    <i class="fas fa-clock text-white text-2xl"></i>
+                </div>
+                <h3 class="text-xl font-bold text-gray-900 mb-4">Proses Cepat</h3>
+                <p class="text-gray-600">Proses klaim yang cepat dan mudah dengan tim profesional yang berpengalaman.</p>
+            </div>
+            
+            <div class="text-center">
+                <div class="w-20 h-20 bg-emerald-600 rounded-2xl flex items-center justify-center mx-auto mb-6">
+                    <i class="fas fa-network-wired text-white text-2xl"></i>
+                </div>
+                <h3 class="text-xl font-bold text-gray-900 mb-4">Jaringan Luas</h3>
+                <p class="text-gray-600">Bengkel rekanan di seluruh Indonesia untuk kemudahan perbaikan.</p>
+            </div>
+            
+            <div class="text-center">
+                <div class="w-20 h-20 bg-emerald-600 rounded-2xl flex items-center justify-center mx-auto mb-6">
+                    <i class="fas fa-headset text-white text-2xl"></i>
+                </div>
+                <h3 class="text-xl font-bold text-gray-900 mb-4">Support 24/7</h3>
+                <p class="text-gray-600">Layanan pelanggan tersedia 24 jam untuk keadaan darurat.</p>
+            </div>
+        </div>
+    </div>
+</section>
+

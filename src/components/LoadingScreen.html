@@ -1,0 +1,86 @@
+<!-- Loading Screen -->
+<div id="loading-screen" class="fixed inset-0 bg-emerald-600 z-50 flex items-center justify-center">
+    <div class="text-center px-4 max-w-sm w-full">
+        <!-- Logo Animation -->
+        <div class="mb-6 sm:mb-8">
+            <div class="inline-block relative">
+                <div class="w-16 h-16 sm:w-24 sm:h-24 bg-white rounded-full flex items-center justify-center animate-pulse overflow-hidden p-1 sm:p-2">
+                    <img src="src/assets/images/Logo_kokonut.png" alt="Loading" class="w-full h-full object-contain">
+                </div>
+                <div class="absolute inset-0 w-16 h-16 sm:w-24 sm:h-24 bg-emerald-600 rounded-full animate-ping opacity-20"></div>
+            </div>
+        </div>
+        
+        <!-- Company Name -->
+        <h1 class="text-white text-2xl sm:text-3xl font-bold mb-3 sm:mb-4 animate-fade-in">
+            Kokonut Insurance
+        </h1>
+        
+        <!-- Tagline -->
+        <p class="text-emerald-200 text-sm sm:text-lg mb-6 sm:mb-8 animate-fade-in-delay">
+            The Next Level of Insurance Brokers
+        </p>
+        
+        <!-- Loading Bar Container -->
+        <div class="w-48 sm:w-64 h-2 bg-emerald-800 rounded-full overflow-hidden mb-4 mx-auto">
+            <div id="loading-bar" class="h-full bg-white rounded-full animate-loading-bar"></div>
+        </div>
+        
+        <!-- Loading Text -->
+        <p class="text-emerald-300 text-xs sm:text-sm animate-pulse">
+            Loading amazing experience...
+        </p>
+    </div>
+</div>
+
+<style>
+@keyframes fade-in {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fade-in-delay {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    50% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes loading-bar {
+    0% {
+        width: 0%;
+    }
+    50% {
+        width: 70%;
+    }
+    100% {
+        width: 100%;
+    }
+}
+
+.animate-fade-in {
+    animation: fade-in 1s ease-out forwards;
+}
+
+.animate-fade-in-delay {
+    animation: fade-in-delay 1.5s ease-out forwards;
+}
+
+.animate-loading-bar {
+    animation: loading-bar 2s ease-out forwards;
+}
+</style>

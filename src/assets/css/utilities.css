@@ -1,0 +1,226 @@
+/* ========================================
+   UTILITIES STYLES
+   ======================================== */
+
+/* Text Utilities */
+.text-gradient {
+    background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.text-shadow-lg {
+    text-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.text-shadow-xl {
+    text-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Background Utilities */
+.bg-gradient-emerald {
+    background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+}
+
+.bg-gradient-blue {
+    background: linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%);
+}
+
+.bg-overlay {
+    background: rgba(0, 0, 0, 0.5);
+}
+
+/* Border Utilities */
+.border-gradient {
+    border: 2px solid transparent;
+    background: linear-gradient(white, white) padding-box,
+                linear-gradient(135deg, #10b981, #059669) border-box;
+}
+
+/* Shadow Utilities */
+.shadow-glow {
+    box-shadow: 0 0 20px rgba(16, 185, 129, 0.3);
+}
+
+.shadow-card {
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.06);
+}
+
+.shadow-card-hover {
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+/* Layout Utilities */
+.flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.flex-between {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.flex-col-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.grid-auto {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+}
+
+/* Spacing Utilities */
+.section-padding {
+    padding: 4rem 0;
+}
+
+.section-padding-sm {
+    padding: 2rem 0;
+}
+
+.section-padding-lg {
+    padding: 6rem 0;
+}
+
+/* Animation Utilities */
+.animate-float {
+    animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+.animate-pulse-slow {
+    animation: pulse-slow 3s ease-in-out infinite;
+}
+
+@keyframes pulse-slow {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.7;
+    }
+}
+
+.animate-slide-in-left {
+    animation: slideInLeft 0.6s ease-out;
+}
+
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.animate-slide-in-right {
+    animation: slideInRight 0.6s ease-out;
+}
+
+@keyframes slideInRight {
+    from {
+        opacity: 0;
+        transform: translateX(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Display Utilities */
+.hidden-mobile {
+    display: block;
+}
+
+.hidden-desktop {
+    display: none;
+}
+
+@media (max-width: 767px) {
+    .hidden-mobile {
+        display: none;
+    }
+    
+    .hidden-desktop {
+        display: block;
+    }
+}
+
+@media (min-width: 768px) {
+    .hidden-mobile {
+        display: none;
+    }
+    
+    .hidden-desktop {
+        display: block;
+    }
+}
+
+/* Position Utilities */
+.sticky-top {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.absolute-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Overflow Utilities */
+.overflow-hidden {
+    overflow: hidden;
+}
+
+.overflow-x-auto {
+    overflow-x: auto;
+}
+
+.overflow-y-auto {
+    overflow-y: auto;
+}
+
+/* Cursor Utilities */
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.cursor-not-allowed {
+    cursor: not-allowed;
+}
+
+/* Transition Utilities */
+.transition-all {
+    transition: all 0.3s ease;
+}
+
+.transition-fast {
+    transition: all 0.15s ease;
+}
+
+.transition-slow {
+    transition: all 0.6s ease;
+}

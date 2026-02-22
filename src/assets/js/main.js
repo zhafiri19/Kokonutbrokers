@@ -112,6 +112,13 @@ function initNavigation() {
         updateActiveNavLink();
     });
 
+    // Update active page on load and resize
+    setTimeout(() => {
+        updateActivePage();
+        updateActiveNavLink();
+    }, 100);
+    window.addEventListener('resize', updateActivePage);
+
     // Smooth scroll for navigation links
     navLinks.forEach(link => {
         link.addEventListener('click', function(e) {
@@ -129,14 +136,21 @@ function initNavigation() {
 
             // Close mobile menu if open
             const mobileMenu = document.getElementById('mobile-menu');
+            const hamburgerIcon = document.getElementById('hamburger-icon');
+            const closeIcon = document.getElementById('close-icon');
             if (!mobileMenu.classList.contains('hidden')) {
                 mobileMenu.classList.add('hidden');
+                // Reset to hamburger icon
+                hamburgerIcon.classList.remove('hidden');
+                closeIcon.classList.add('hidden');
+                closeIcon.classList.remove('rotate-90');
             }
         });
     });
 
     function updateActiveNavLink() {
         const scrollY = window.pageYOffset;
+        let currentSection = '';
 
         sections.forEach(section => {
             const sectionHeight = section.offsetHeight;
@@ -144,12 +158,44 @@ function initNavigation() {
             const sectionId = section.getAttribute('id');
 
             if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
-                navLinks.forEach(link => {
-                    link.classList.remove('text-emerald-300');
-                    if (link.getAttribute('href') === '#' + sectionId) {
-                        link.classList.add('text-emerald-300');
-                    }
-                });
+                currentSection = sectionId;
+            }
+        });
+
+        // Update all nav links (desktop and mobile)
+        navLinks.forEach(link => {
+            const linkHref = link.getAttribute('href');
+            if (linkHref && linkHref.startsWith('#')) {
+                const targetId = linkHref.substring(1);
+                
+                // Remove active class from all nav links
+                link.classList.remove('active');
+                
+                // Add active class to current section link
+                if (targetId === currentSection) {
+                    link.classList.add('active');
+                }
+            }
+        });
+
+        // Also check current page from URL
+        updateActivePage();
+    }
+
+    function updateActivePage() {
+        const currentPath = window.location.pathname;
+        const currentPage = currentPath.split('/').pop().replace('.html', '') || 'home';
+        
+        // Update desktop navbar links based on current page
+        navLinks.forEach(link => {
+            const dataPage = link.getAttribute('data-page');
+            
+            // Remove active class from all links first
+            link.classList.remove('active');
+            
+            // Add active class to current page link (desktop only)
+            if (dataPage === currentPage && window.innerWidth >= 1024) {
+                link.classList.add('active');
             }
         });
     }
@@ -746,6 +792,7 @@ function showNotification(message, type = 'info') {
 document.addEventListener('DOMContentLoaded', function() {
     setTimeout(() => {
         initDownloadButtons();
+        initNavbarScroll();
     }, 2500);
     
     // Set current year in footer
@@ -754,3 +801,40 @@ document.addEventListener('DOMContentLoaded', function() {
         currentYearElement.textContent = new Date().getFullYear();
     }
 });
+
+// Navbar Scroll Effect
+function initNavbarScroll() {
+    const navbar = document.getElementById('navbar');
+    let lastScrollTop = 0;
+    
+    window.addEventListener('scroll', function() {
+        const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        
+        if (scrollTop > 50) {
+            // Change navbar style when scrolled
+            navbar.classList.add('navbar-scrolled');
+            
+            // Adjust text colors for better contrast
+            const navLinks = navbar.querySelectorAll('.nav-link');
+            navLinks.forEach(link => {
+                if (!link.classList.contains('text-emerald-300')) {
+                    link.classList.add('text-emerald-100');
+                }
+            });
+        } else {
+            // Reset navbar style when at top
+            navbar.classList.remove('navbar-scrolled');
+            
+            // Reset text colors
+            const navLinks = navbar.querySelectorAll('.nav-link');
+            navLinks.forEach(link => {
+                if (!link.classList.contains('text-emerald-300')) {
+                    link.classList.remove('text-emerald-100');
+                    link.classList.add('text-white');
+                }
+            });
+        }
+        
+        lastScrollTop = scrollTop;
+    });
+}

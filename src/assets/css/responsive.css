@@ -1,0 +1,289 @@
+/* ========================================
+   RESPONSIVE DESIGN
+   ======================================== */
+
+/* Smartwatch (very small screens) */
+@media (max-width: 320px) {
+    .container {
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+    }
+    
+    h1 {
+        font-size: 1.5rem !important;
+    }
+    
+    h2 {
+        font-size: 1.25rem !important;
+    }
+    
+    .text-3xl {
+        font-size: 1.25rem !important;
+    }
+    
+    .text-2xl {
+        font-size: 1.125rem !important;
+    }
+    
+    .w-24 {
+        width: 4rem !important;
+        height: 4rem !important;
+    }
+    
+    .p-4 {
+        padding: 0.75rem !important;
+    }
+    
+    .mobile-nav-link {
+        font-size: 0.875rem !important;
+        padding: 0.5rem 0.75rem !important;
+    }
+    
+    /* Remove extra padding for smartwatch */
+    main#main-content {
+        padding-top: 60px; /* Even smaller navbar height for smartwatch */
+    }
+}
+
+/* Smartphone (small screens) */
+@media (min-width: 321px) and (max-width: 767px) {
+    .container {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    
+    .hero-section h1 {
+        font-size: 2rem !important;
+    }
+    
+    .hero-section p {
+        font-size: 1rem !important;
+    }
+    
+    .product-card {
+        margin-bottom: 1rem;
+    }
+    
+    .grid-cols-3 {
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+    
+    /* Remove extra padding for mobile */
+    main#main-content {
+        padding-top: 70px; /* Smaller navbar height for mobile */
+    }
+}
+
+/* Tablet (medium screens) */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .container {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+    
+    .grid-cols-3 {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+    
+    .text-4xl {
+        font-size: 2.5rem !important;
+    }
+    
+    .text-3xl {
+        font-size: 2rem !important;
+    }
+}
+
+/* Laptop (large screens) */
+@media (min-width: 1024px) and (max-width: 1439px) {
+    .container {
+        max-width: 1024px;
+    }
+    
+    .grid-cols-3 {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+}
+
+/* Desktop (extra large screens) */
+@media (min-width: 1440px) {
+    .container {
+        max-width: 1200px;
+    }
+    
+    .text-5xl {
+        font-size: 3rem !important;
+    }
+    
+    .text-4xl {
+        font-size: 2.75rem !important;
+    }
+}
+
+/* Touch device optimizations */
+@media (hover: none) and (pointer: coarse) {
+    .nav-link {
+        padding: 0.75rem 1rem;
+    }
+    
+    .product-card {
+        margin-bottom: 1.5rem;
+    }
+    
+    button {
+        min-height: 44px; /* Minimum touch target size */
+        min-width: 44px;
+    }
+}
+
+/* High DPI displays */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    img {
+        image-rendering: -webkit-optimize-contrast;
+        image-rendering: crisp-edges;
+    }
+}
+
+/* Android-specific optimizations */
+@media screen and (-webkit-min-device-pixel-ratio: 1) and (max-width: 767px) {
+    .mobile-nav-link {
+        padding: 0.75rem 1rem !important;
+        font-size: 1rem !important;
+    }
+    
+    #mobile-menu {
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+    }
+    
+    .cta-button {
+        min-height: 48px;
+        font-size: 1rem;
+    }
+}
+
+/* iOS-specific optimizations */
+@supports (-webkit-touch-callout: none) {
+    .mobile-nav-link {
+        -webkit-tap-highlight-color: transparent;
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+    }
+    
+    #mobile-menu {
+        -webkit-overflow-scrolling: touch;
+        -webkit-transform: translateZ(0);
+    }
+    
+    button {
+        -webkit-appearance: none;
+        -webkit-border-radius: 0;
+    }
+}
+
+/* iPad-specific optimizations */
+@media only screen 
+and (min-device-width: 768px) 
+and (max-device-width: 1023px) 
+and (-webkit-min-device-pixel-ratio: 1) {
+    .container {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+    
+    .mobile-nav-link {
+        font-size: 1.125rem;
+        padding: 0.875rem 1.25rem;
+    }
+}
+
+/* iPhone-specific optimizations */
+@media only screen 
+and (min-device-width: 375px) 
+and (max-device-width: 767px) 
+and (-webkit-min-device-pixel-ratio: 2) {
+    .w-16 {
+        width: 3.5rem;
+        height: 3.5rem;
+    }
+    
+    .text-2xl {
+        font-size: 1.5rem;
+    }
+    
+    /* Remove extra padding for iPhone */
+    main#main-content {
+        padding-top: 70px;
+    }
+}
+
+/* Safari-specific fixes */
+_::-webkit-full-page-media, _:future {
+    :root {
+        --safar-fix: 1;
+    }
+}
+
+@media not all and (min-resolution:.001dpcm) {
+    @supports (-webkit-appearance:none) {
+        .navbar {
+            position: -webkit-sticky;
+            position: sticky;
+        }
+    }
+}
+
+/* Main Content Padding - Remove space below navbar */
+main#main-content {
+    padding-top: 80px; /* Match navbar height exactly */
+}
+
+/* Container max-width for better content spacing */
+.container {
+    max-width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Custom container padding for better spacing */
+.container {
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+@media (min-width: 640px) {
+    .container {
+        padding-left: 2.5rem;
+        padding-right: 2.5rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .container {
+        padding-left: 3.5rem;
+        padding-right: 3.5rem;
+    }
+}
+
+@media (min-width: 1280px) {
+    .container {
+        padding-left: 4.5rem;
+        padding-right: 4.5rem;
+    }
+}
+
+/* Smooth Scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Responsive Text */
+@media (max-width: 640px) {
+    .hero-title {
+        font-size: 2rem !important;
+    }
+    
+    .counter {
+        font-size: 2rem;
+    }
+}

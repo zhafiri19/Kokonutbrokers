@@ -48,6 +48,12 @@ class Router {
                 }
             }
         });
+        
+        // Initialize active navigation for current page
+        setTimeout(() => {
+            const currentRoute = window.location.hash.substring(1) || 'home';
+            this.updateActiveNav(currentRoute);
+        }, 100);
     }
 
     handleRoute() {
@@ -121,10 +127,31 @@ class Router {
         const navLinks = document.querySelectorAll('.nav-link, .mobile-nav-link');
         
         navLinks.forEach(link => {
-            link.classList.remove('text-emerald-300');
+            // Remove active classes
+            link.classList.remove('text-emerald-300', 'font-semibold');
+            link.classList.add('text-white');
+            
+            // Reset underline
+            const underline = link.querySelector('span');
+            if (underline) {
+                underline.classList.remove('w-full');
+                underline.classList.add('w-0');
+            }
+            
+            // Check if this link should be active
             const href = link.getAttribute('href');
-            if (href === '#' + route) {
-                link.classList.add('text-emerald-300');
+            const dataPage = link.getAttribute('data-page');
+            
+            if ((href === '#' + route) || (dataPage === route)) {
+                // Add active classes
+                link.classList.remove('text-white');
+                link.classList.add('text-emerald-300', 'font-semibold');
+                
+                // Show underline for active link
+                if (underline) {
+                    underline.classList.remove('w-0');
+                    underline.classList.add('w-full');
+                }
             }
         });
     }

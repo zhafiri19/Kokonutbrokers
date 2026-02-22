@@ -1,5 +1,150 @@
 /* Custom CSS for Kokonut Insurance Brokers */
 
+/* ========================================
+   NAVBAR STYLES
+   ======================================== */
+
+/* Ensure navbar follows scroll on all devices */
+#navbar {
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    z-index: 9999 !important;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-perspective: 1000;
+    perspective: 1000;
+    background-color: #0f172a !important;
+}
+
+/* Device-specific optimizations */
+@media (max-width: 320px) {
+    #navbar {
+        position: fixed !important;
+        top: 0 !important;
+        z-index: 9999 !important;
+    }
+}
+
+@media (min-width: 321px) and (max-width: 767px) {
+    #navbar {
+        position: fixed !important;
+        top: 0 !important;
+        z-index: 9999 !important;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    #navbar {
+        position: fixed !important;
+        top: 0 !important;
+        z-index: 9999 !important;
+    }
+}
+
+@media (min-width: 1024px) {
+    #navbar {
+        position: fixed !important;
+        top: 0 !important;
+        z-index: 9999 !important;
+    }
+}
+
+/* iOS Safari specific */
+@supports (-webkit-touch-callout: none) {
+    #navbar {
+        position: fixed !important;
+        top: 0 !important;
+        -webkit-transform: translateZ(0);
+        transform: translateZ(0);
+    }
+}
+
+/* Android specific */
+@media screen and (-webkit-min-device-pixel-ratio: 1) and (max-width: 767px) {
+    #navbar {
+        position: fixed !important;
+        top: 0 !important;
+        -webkit-transform: translateZ(0);
+        transform: translateZ(0);
+    }
+}
+
+/* Desktop active link color - FINAL VERSION (Microsoft Duo, MacBook Air, etc) */
+@media (min-width: 1024px) {
+    .nav-link.active {
+        color: #6adeaf !important;
+    }
+    
+    .nav-link.active:hover {
+        color: #6adeaf !important;
+    }
+    
+    /* Override any conflicting styles */
+    .nav-link.active:focus {
+        color: #6adeaf !important;
+    }
+    
+    .nav-link.active:active {
+        color: #6adeaf !important;
+    }
+}
+
+/* Large Desktop/Extra Large (XL) active link color */
+@media (min-width: 1280px) {
+    .nav-link.active {
+        color: #6adeaf !important;
+    }
+}
+
+/* Extra Extra Large (XXL) active link color */
+@media (min-width: 1536px) {
+    .nav-link.active {
+        color: #6adeaf !important;
+    }
+}
+
+/* Mobile/Tablet/Smartwatch active link color - NORMAL (no special color) */
+@media (max-width: 1023px) {
+    .mobile-nav-link.active {
+        color: inherit !important;
+    }
+}
+
+/* Remove all underlines completely */
+.nav-link span,
+.nav-link:hover span,
+.nav-link:focus span,
+.nav-link:active span {
+    display: none !important;
+    width: 0 !important;
+    height: 0 !important;
+}
+
+/* Remove text decoration from all links */
+a {
+    text-decoration: none !important;
+}
+
+a:hover {
+    text-decoration: none !important;
+}
+
+a:focus {
+    text-decoration: none !important;
+}
+
+a:active {
+    text-decoration: none !important;
+}
+
+/* ========================================
+   RESPONSIVE DESIGN
+   ======================================== */
+
 /* Responsive Design for Various Devices */
 
 /* Smartwatch (very small screens) */
@@ -228,12 +373,41 @@ _::-webkit-full-page-media, _:future {
 
 /* Main Content Padding */
 main#main-content {
-    padding-top: 80px; /* Account for fixed navbar */
+    padding-top: 90px; /* Account for fixed navbar */
 }
 
 /* Container max-width for better content spacing */
 .container {
-    max-width: 1200px;
+    max-width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Custom container padding for better spacing */
+.container {
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+@media (min-width: 640px) {
+    .container {
+        padding-left: 2.5rem;
+        padding-right: 2.5rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .container {
+        padding-left: 3.5rem;
+        padding-right: 3.5rem;
+    }
+}
+
+@media (min-width: 1280px) {
+    .container {
+        padding-left: 4.5rem;
+        padding-right: 4.5rem;
+    }
 }
 
 /* Smooth Scrolling */
@@ -413,8 +587,25 @@ img.loading {
 
 /* Navbar Styles */
 .navbar-scrolled {
-    background-color: rgba(6, 78, 59, 0.95);
-    backdrop-filter: blur(10px);
+    background-color: rgba(4, 120, 87, 0.98);
+    backdrop-filter: blur(12px);
+}
+
+.navbar-scrolled .nav-link {
+    color: #ffffff !important;
+}
+
+.navbar-scrolled .nav-link:hover {
+    color: #d1fae5 !important;
+}
+
+/* Navbar scrolled styles - keep desktop active color #6adeaf */
+.navbar-scrolled .nav-link.active {
+    color: #6adeaf !important;
+}
+
+.navbar-scrolled .nav-link.text-emerald-300 {
+    color: #d1fae5 !important;
 }
 
 /* Animation Classes */
@@ -576,5 +767,34 @@ img.loading {
     
     .counter {
         font-size: 2rem;
+    }
+}
+
+/* Desktop Navbar Link Styles - CONSOLIDATED */
+@media (min-width: 1024px) {
+    .nav-link {
+        color: #dee5ef !important;
+        transition: color 0.2s ease;
+    }
+    
+    .nav-link:hover {
+        color: #61cea8 !important;
+    }
+    
+    /* Resources dropdown button */
+    .relative.group > button {
+        color: #dee5ef !important;
+        transition: color 0.2s ease;
+    }
+    
+    .relative.group > button:hover {
+        color: #61cea8 !important;
+    }
+}
+
+/* Mobile Navbar Link Styles - NORMAL (no special active color) */
+@media (max-width: 1023px) {
+    .mobile-nav-link.active {
+        color: inherit !important;
     }
 }

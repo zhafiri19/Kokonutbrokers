@@ -1,0 +1,347 @@
+/* ========================================
+   COMPONENTS STYLES
+   ======================================== */
+
+/* Image Styling */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+}
+
+/* Object Fit for Images */
+.object-cover {
+    object-fit: cover;
+}
+
+.object-contain {
+    object-fit: contain;
+}
+
+/* Image Container Styling */
+.image-container {
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+/* Avatar Images */
+.avatar {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.avatar-lg {
+    width: 192px;
+    height: 192px;
+    border: 4px solid #ffffff;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+/* Logo Images */
+.logo-img {
+    height: 64px;
+    object-fit: contain;
+    transition: all 0.3s ease;
+}
+
+/* Card Images */
+.card-image {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 12px 12px 0 0;
+}
+
+/* Hero Images */
+.hero-image {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 16px;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+/* Blog Images */
+.blog-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* Testimonial Images */
+.testimonial-avatar {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #f3f4f6;
+}
+
+/* Responsive Images */
+@media (max-width: 768px) {
+    .hero-image {
+        height: 250px;
+    }
+    
+    .card-image {
+        height: 200px;
+    }
+    
+    .avatar-lg {
+        width: 150px;
+        height: 150px;
+    }
+    
+    .logo-img {
+        height: 48px;
+    }
+}
+
+/* Image Loading Animation */
+img.loading {
+    background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+    background-size: 200% 100%;
+    animation: loading 1.5s infinite;
+}
+
+@keyframes loading {
+    0% {
+        background-position: 200% 0;
+    }
+    100% {
+        background-position: -200% 0;
+    }
+}
+
+/* Image Hover Effects */
+.image-hover {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.image-hover:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Image Grid Layout */
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+}
+
+.image-grid img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+/* Image Caption */
+.image-caption {
+    text-align: center;
+    margin-top: 0.5rem;
+    font-size: 0.875rem;
+    color: #6b7280;
+    font-style: italic;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+/* Animation Classes */
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.8s ease-in-out;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.slide-up {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.6s ease-out;
+}
+
+.slide-up.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Counter Animation */
+.counter {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #10b981;
+}
+
+/* Card Hover Effects */
+.card-hover {
+    transition: all 0.3s ease;
+}
+
+.card-hover:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+/* Logo Grayscale to Color */
+.logo-grayscale {
+    filter: grayscale(100%);
+    transition: filter 0.3s ease;
+}
+
+.logo-grayscale:hover {
+    filter: grayscale(0%);
+}
+
+/* Glow Effect */
+.glow-effect {
+    transition: all 0.3s ease;
+}
+
+.glow-effect:hover {
+    box-shadow: 0 0 20px rgba(16, 185, 129, 0.3);
+}
+
+/* CTA Button Styles */
+.cta-button {
+    background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.cta-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(16, 185, 129, 0.3);
+}
+
+/* Mobile Button Alignment Fix */
+@media (max-width: 767px) {
+    .cta-button,
+    .bg-white.border-2.border-emerald-600 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        width: 100%;
+    }
+    
+    .cta-button i,
+    .bg-white.border-2.border-emerald-600 i {
+        margin-right: 0.5rem;
+        display: inline-flex;
+        align-items: center;
+    }
+}
+
+/* Mobile Menu Animation */
+.mobile-menu-enter {
+    animation: slideDown 0.3s ease-out;
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Parallax Effect */
+.parallax {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Loading Animation */
+.loading {
+    animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+@keyframes pulse {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: .5;
+    }
+}
+
+/* Form Styles */
+.form-input {
+    transition: all 0.3s ease;
+}
+
+.form-input:focus {
+    border-color: #10b981;
+    box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.1);
+}
+
+/* Accordion Styles */
+.accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+}
+
+.accordion-content.active {
+    max-height: 500px;
+}
+
+/* Testimonial Card */
+.testimonial-card {
+    background: linear-gradient(135deg, #ffffff 0%, #f9fafb 100%);
+}
+
+/* Timeline Styles */
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 2px;
+    height: 100%;
+    background: #10b981;
+}
+
+@media (max-width: 768px) {
+    .timeline::before {
+        left: 20px;
+    }
+}

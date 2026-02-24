@@ -13,7 +13,7 @@ class Router {
             'home': 'src/pages/home.html',
             'tentang': 'src/pages/tentang.html',
             'produk': 'src/pages/produk.html',
-            'corporate': 'src/pages/corporate.html',
+            'penghargaan-mitra': 'src/pages/penghargaan-mitra.html',
             'kontak': 'src/pages/kontak.html',
             'faq': 'src/pages/faq.html',
             'blog': 'src/pages/blog.html',
@@ -27,7 +27,8 @@ class Router {
             'asuransi-kesehatan-internasional': 'src/pages/asuransi-kesehatan-internasional.html',
             'asuransi-jaminan': 'src/pages/asuransi-jaminan.html',
             'property-all-risk': 'src/pages/property-all-risk.html',
-            'asuransi-kesehatan-karyawan': 'src/pages/asuransi-kesehatan-karyawan.html'
+            'asuransi-kesehatan-karyawan': 'src/pages/asuransi-kesehatan-karyawan.html',
+            'asuransi-property-all-risk': 'src/pages/asuransi-property-all-risk.html'
         };
 
         // Handle initial route
@@ -45,6 +46,19 @@ class Router {
                 const route = e.target.getAttribute('href').substring(1);
                 if (this.routes[route]) {
                     this.navigateTo(route);
+                    
+                    // Close mobile menu if open
+                    const mobileMenu = document.getElementById('mobile-menu');
+                    const hamburgerIcon = document.getElementById('hamburger-icon');
+                    const closeIcon = document.getElementById('close-icon');
+                    if (mobileMenu && !mobileMenu.classList.contains('hidden')) {
+                        mobileMenu.classList.add('hidden');
+                        if (hamburgerIcon) hamburgerIcon.classList.remove('hidden');
+                        if (closeIcon) {
+                            closeIcon.classList.add('hidden');
+                            closeIcon.classList.remove('rotate-90');
+                        }
+                    }
                 }
             }
         });
@@ -124,14 +138,14 @@ class Router {
     }
 
     updateActiveNav(route) {
-        const navLinks = document.querySelectorAll('.nav-link, .mobile-nav-link');
+        const navLinks = document.querySelectorAll('.nav-link, .mobile-nav-link, .footer-link');
         
         navLinks.forEach(link => {
             // Remove active classes
-            link.classList.remove('text-emerald-300', 'font-semibold');
+            link.classList.remove('active', 'text-emerald-300', 'font-semibold');
             link.classList.add('text-white');
             
-            // Reset underline
+            // Reset underline (only for navbar links)
             const underline = link.querySelector('span');
             if (underline) {
                 underline.classList.remove('w-full');
@@ -142,18 +156,37 @@ class Router {
             const href = link.getAttribute('href');
             const dataPage = link.getAttribute('data-page');
             
-            if ((href === '#' + route) || (dataPage === route)) {
+            // Check if current route is a product detail page
+            const isProductDetail = this.isProductDetailRoute(route);
+            
+            if ((href === '#' + route) || (dataPage === route) || 
+                (isProductDetail && (href === '#produk' || dataPage === 'produk'))) {
                 // Add active classes
                 link.classList.remove('text-white');
-                link.classList.add('text-emerald-300', 'font-semibold');
+                link.classList.add('active', 'text-emerald-300', 'font-semibold');
                 
-                // Show underline for active link
+                // Show underline for active link (only for navbar links)
                 if (underline) {
                     underline.classList.remove('w-0');
                     underline.classList.add('w-full');
                 }
             }
         });
+    }
+
+    isProductDetailRoute(route) {
+        const productRoutes = [
+            'asuransi-alat-berat',
+            'asuransi-cargo', 
+            'asuransi-kendaraan',
+            'asuransi-kredit',
+            'asuransi-project-liability',
+            'asuransi-kesehatan-internasional',
+            'asuransi-jaminan',
+            'asuransi-kesehatan-karyawan',
+            'asuransi-property-all-risk'
+        ];
+        return productRoutes.includes(route);
     }
 
     reinitializeAnimations() {

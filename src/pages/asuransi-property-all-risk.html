@@ -1,0 +1,377 @@
+<!-- Hero Section -->
+<section class="py-20 bg-gradient-to-br from-blue-50 to-white" style="background: linear-gradient(to bottom right, #dbeafe, #eff6ff);">
+    <div class="container mx-auto px-4">
+        <div class="flex flex-col lg:flex-row items-center gap-12">
+            <div class="flex-1">
+                <div class="mb-6">
+                    <button onclick="router.navigateTo('produk')" class="inline-flex items-center text-blue-600 hover:text-blue-800 transition-colors">
+                        <i class="fas fa-arrow-left mr-2"></i>
+                        Kembali ke Produk
+                    </button>
+                </div>
+                <h1 class="text-4xl md:text-5xl font-bold mb-6">
+                    Asuransi Property All Risk
+                </h1>
+                <p class="text-xl text-gray-700 mb-8 leading-relaxed">
+                    Memberikan perlindungan atas kerusakan yang terjadi secara tiba-tiba dan tidak terduga akibat berbagai macam risiko yang menjadi penyebabnya seperti kebakaran, sambaran petir, ledakan, tertimpa pesawat, asap (FLEXAS), angin topan badai, banjir, tanah longsor, gempa bumi, pemogokan, huru hara, kerusuhan, perbuatan jahat orang lain dan risiko lainnya.
+                </p>
+                <div class="flex flex-wrap gap-4">
+                    <button onclick="document.getElementById('detail-produk').scrollIntoView({behavior: 'smooth'})" class="bg-white text-blue-700 hover:bg-blue-50 font-bold px-8 py-4 rounded-full transition-all duration-300" style="color: #1e3a8a;">
+                        <i class="fas fa-info-circle mr-2"></i>Lihat Detail
+                    </button>
+                </div>
+            </div>
+            <div class="flex-1">
+                <div class="relative">
+                    <img src="https://via.placeholder.com/600x400/ca8a04/ffffff?text=Property+All+Risk" alt="Property All Risk" class="rounded-2xl shadow-2xl">
+                    <div class="absolute -bottom-6 -right-6 bg-white text-blue-700 p-6 rounded-xl shadow-lg" style="color: #1e3a8a;">
+                        <div class="text-3xl font-bold">PAR</div>
+                        <div class="text-sm text-gray-600">Property All Risk</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Target Users -->
+<section class="py-16 bg-gray-50">
+    <div class="container mx-auto px-4">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl font-bold text-gray-900 mb-4">Pengguna (Tertanggung)</h2>
+            <p class="text-lg text-gray-600">Berbagai jenis properti yang dapat diproteksi</p>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300">
+                <div class="w-16 h-16 bg-blue-100 rounded-2xl flex items-center justify-center mb-6" style="background-color: #dbeafe;">
+                    <i class="fas fa-building text-blue-600 text-2xl" style="color: #1e3a8a;"></i>
+                </div>
+                <h3 class="text-xl font-bold text-gray-900 mb-4">Bangunan Kantor</h3>
+                <p class="text-gray-600 mb-6">Perlindungan untuk gedung perkantoran dari berbagai risiko kerusakan.</p>
+                <ul class="space-y-2 text-sm text-gray-600">
+                    <li><i class="fas fa-check text-blue-500 mr-2"></i>Ruang kantor</li>
+                    <li><i class="fas fa-check text-blue-500 mr-2"></i>Peralatan kantor</li>
+                    <li><i class="fas fa-check text-blue-500 mr-2"></i>Fasilitas pendukung</li>
+                    <li><i class="fas fa-check text-blue-500 mr-2"></i>Arsip dan dokumen</li>
+                </ul>
+            </div>
+            
+            <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300">
+                <div class="w-16 h-16 bg-blue-100 rounded-2xl flex items-center justify-center mb-6" style="background-color: #dbeafe;">
+                    <i class="fas fa-store text-blue-600 text-2xl" style="color: #1e3a8a;"></i>
+                </div>
+                <h3 class="text-xl font-bold text-gray-900 mb-4">Pertokoan</h3>
+                <p class="text-gray-600 mb-6">Proteksi untuk gedung pertokoan dan pusat perbelanjaan.</p>
+                <ul class="space-y-2 text-sm text-gray-600">
+                    <li><i class="fas fa-check text-blue-500 mr-2"></i>Ruang retail</li>
+                    <li><i class="fas fa-check text-blue-500 mr-2"></i>Gudang penyimpanan</li>
+                    <li><i class="fas fa-check text-blue-500 mr-2"></i>Display barang</li>
+                    <li><i class="fas fa-check text-blue-500 mr-2"></i>Peralatan kasir</li>
+                </ul>
+            </div>
+            
+            <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300">
+                <div class="w-16 h-16 bg-blue-100 rounded-2xl flex items-center justify-center mb-6" style="background-color: #dbeafe;">
+                    <i class="fas fa-hospital text-blue-600 text-2xl" style="color: #1e3a8a;"></i>
+                </div>
+                <h3 class="text-xl font-bold text-gray-900 mb-4">Rumah Sakit</h3>
+                <p class="text-gray-600 mb-6">Perlindungan khusus untuk fasilitas kesehatan dan medis.</p>
+                <ul class="space-y-2 text-sm text-gray-600">
+                    <li><i class="fas fa-check text-blue-500 mr-2"></i>Ruang rawat inap</li>
+                    <li><i class="fas fa-check text-blue-500 mr-2"></i>Peralatan medis</li>
+                    <li><i class="fas fa-check text-blue-500 mr-2"></i>Laboratorium</li>
+                    <li><i class="fas fa-check text-blue-500 mr-2"></i>Obat-obatan</li>
+                </ul>
+            </div>
+            
+            <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300">
+                <div class="w-16 h-16 bg-blue-100 rounded-2xl flex items-center justify-center mb-6" style="background-color: #dbeafe;">
+                    <i class="fas fa-bed text-blue-600 text-2xl" style="color: #1e3a8a;"></i>
+                </div>
+                <h3 class="text-xl font-bold text-gray-900 mb-4">Hotel</h3>
+                <p class="text-gray-600 mb-6">Proteksi untuk properti hotel dan fasilitas hospitality.</p>
+                <ul class="space-y-2 text-sm text-gray-600">
+                    <li><i class="fas fa-check text-blue-500 mr-2"></i>Kamar hotel</li>
+                    <li><i class="fas fa-check text-blue-500 mr-2"></i>Restoran dan bar</li>
+                    <li><i class="fas fa-check text-blue-500 mr-2"></i>Fasilitas rekreasi</li>
+                    <li><i class="fas fa-check text-blue-500 mr-2"></i>Peralatan hotel</li>
+                </ul>
+            </div>
+            
+            <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300">
+                <div class="w-16 h-16 bg-blue-100 rounded-2xl flex items-center justify-center mb-6" style="background-color: #dbeafe;">
+                    <i class="fas fa-industry text-blue-600 text-2xl" style="color: #1e3a8a;"></i>
+                </div>
+                <h3 class="text-xl font-bold text-gray-900 mb-4">Pabrik</h3>
+                <p class="text-gray-600 mb-6">Perlindungan untuk fasilitas produksi dan pabrik.</p>
+                <ul class="space-y-2 text-sm text-gray-600">
+                    <li><i class="fas fa-check text-blue-500 mr-2"></i>Lini produksi</li>
+                    <li><i class="fas fa-check text-blue-500 mr-2"></i>Mesin industri</li>
+                    <li><i class="fas fa-check text-blue-500 mr-2"></i>Gudang bahan baku</li>
+                    <li><i class="fas fa-check text-blue-500 mr-2"></i>Utility systems</li>
+                </ul>
+            </div>
+            
+            <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300">
+                <div class="w-16 h-16 bg-blue-100 rounded-2xl flex items-center justify-center mb-6" style="background-color: #dbeafe;">
+                    <i class="fas fa-warehouse text-blue-600 text-2xl" style="color: #1e3a8a;"></i>
+                </div>
+                <h3 class="text-xl font-bold text-gray-900 mb-4">Gudang</h3>
+                <p class="text-gray-600 mb-6">Proteksi untuk gudang penyimpanan dan distribusi barang.</p>
+                <ul class="space-y-2 text-sm text-gray-600">
+                    <li><i class="fas fa-check text-blue-500 mr-2"></i>Area penyimpanan</li>
+                    <li><i class="fas fa-check text-blue-500 mr-2"></i>Sistem rak</li>
+                    <li><i class="fas fa-check text-blue-500 mr-2"></i>Loading docks</li>
+                    <li><i class="fas fa-check text-blue-500 mr-2"></i>Inventory systems</li>
+                </ul>
+            </div>
+            
+            <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300">
+                <div class="w-16 h-16 bg-blue-100 rounded-2xl flex items-center justify-center mb-6" style="background-color: #dbeafe;">
+                    <i class="fas fa-plane text-blue-600 text-2xl" style="color: #1e3a8a;"></i>
+                </div>
+                <h3 class="text-xl font-bold text-gray-900 mb-4">Bandara</h3>
+                <p class="text-gray-600 mb-6">Perlindungan untuk fasilitas bandara dan infrastruktur penerbangan.</p>
+                <ul class="space-y-2 text-sm text-gray-600">
+                    <li><i class="fas fa-check text-blue-500 mr-2"></i>Terminal bandara</li>
+                    <li><i class="fas fa-check text-blue-500 mr-2"></i>Control tower</li>
+                    <li><i class="fas fa-check text-blue-500 mr-2"></i>Runway dan taxiway</li>
+                    <li><i class="fas fa-check text-blue-500 mr-2"></i>Navigation systems</li>
+                </ul>
+            </div>
+            
+            <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300">
+                <div class="w-16 h-16 bg-blue-100 rounded-2xl flex items-center justify-center mb-6" style="background-color: #dbeafe;">
+                    <i class="fas fa-university text-blue-600 text-2xl" style="color: #1e3a8a;"></i>
+                </div>
+                <h3 class="text-xl font-bold text-gray-900 mb-4">Bank Pemberi Kredit</h3>
+                <p class="text-gray-600 mb-6">Perlindungan untuk agunan kredit pembelian property.</p>
+                <ul class="space-y-2 text-sm text-gray-600">
+                    <li><i class="fas fa-check text-blue-500 mr-2"></i>Jaminan agunan kredit</li>
+                    <li><i class="fas fa-check text-blue-500 mr-2"></i>Property sebagai collateral</li>
+                    <li><i class="fas fa-check text-blue-500 mr-2"></i>Proteksi nilai aset</li>
+                    <li><i class="fas fa-check text-blue-500 mr-2"></i>Meminimalisir risiko kredit</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Covered Risks -->
+<section id="detail-produk" class="py-20 bg-white">
+    <div class="container mx-auto px-4">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl font-bold text-gray-900 mb-4">Risiko yang Dijamin</h2>
+            <p class="text-lg text-gray-600">Berbagai jenis risiko yang dicakup oleh asuransi Property All Risk</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <!-- Fire & Lightning -->
+            <div class="bg-gradient-to-br from-red-50 to-white p-6 rounded-2xl border border-red-200">
+                <div class="w-12 h-12 bg-blue-600 rounded-xl flex items-center justify-center mb-4" style="background-color: #1e3a8a;">
+                    <i class="fas fa-fire text-white text-xl"></i></i>
+                </div>
+                <h3 class="text-lg font-bold text-gray-900 mb-3">Kebakaran & Petir</h3>
+                <p class="text-gray-700 text-sm mb-4">
+                    Kerusakan akibat kebakaran, sambaran petir, dan ledakan yang tidak terduga.
+                </p>
+                <div class="space-y-2">
+                    <div class="flex items-start">
+                        <i class="fas fa-shield-alt text-red-600 mt-1 mr-2 text-sm"></i>
+                        <span class="text-gray-700 text-sm">Api dan asap</span>
+                    </div>
+                    <div class="flex items-start">
+                        <i class="fas fa-bolt text-red-600 mt-1 mr-2 text-sm"></i>
+                        <span class="text-gray-700 text-sm">Sambaran petir</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Aircraft Impact -->
+            <div class="bg-gradient-to-br from-blue-50 to-white p-6 rounded-2xl border border-blue-200">
+                <div class="w-12 h-12 bg-blue-600 rounded-xl flex items-center justify-center mb-4">
+                    <i class="fas fa-plane text-white text-xl"></i></i>
+                </div>
+                <h3 class="text-lg font-bold text-gray-900 mb-3">Tertimpa Pesawat</h3>
+                <p class="text-gray-700 text-sm mb-4">
+                    Kerusakan properti akibat jatuhnya pesawat terbang atau benda dari pesawat.
+                </p>
+                <div class="space-y-2">
+                    <div class="flex items-start">
+                        <i class="fas fa-shield-alt text-blue-600 mt-1 mr-2 text-sm"></i>
+                        <span class="text-gray-700 text-sm">Impact damage</span>
+                    </div>
+                    <div class="flex items-start">
+                        <i class="fas fa-plane-crash text-blue-600 mt-1 mr-2 text-sm"></i>
+                        <span class="text-gray-700 text-sm">Aircraft accident</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Smoke Damage -->
+            <div class="bg-gradient-to-br from-gray-50 to-white p-6 rounded-2xl border border-gray-200">
+                <div class="w-12 h-12 bg-gray-600 rounded-xl flex items-center justify-center mb-4">
+                    <i class="fas fa-smog text-white text-xl"></i></i>
+                </div>
+                <h3 class="text-lg font-bold text-gray-900 mb-3">Kerusakan Asap (FLEXAS)</h3>
+                <p class="text-gray-700 text-sm mb-4">
+                    Kerusakan akibat asap dan gas beracun dari kebakaran di sekitar properti.
+                </p>
+                <div class="space-y-2">
+                    <div class="flex items-start">
+                        <i class="fas fa-shield-alt text-gray-600 mt-1 mr-2 text-sm"></i>
+                        <span class="text-gray-700 text-sm">Smoke damage</span>
+                    </div>
+                    <div class="flex items-start">
+                        <i class="fas fa-wind text-gray-600 mt-1 mr-2 text-sm"></i>
+                        <span class="text-gray-700 text-sm">FLEXAS coverage</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Natural Disasters -->
+            <div class="bg-gradient-to-br from-green-50 to-white p-6 rounded-2xl border border-green-200">
+                <div class="w-12 h-12 bg-green-600 rounded-xl flex items-center justify-center mb-4">
+                    <i class="fas fa-cloud-bolt text-white text-xl"></i></i>
+                </div>
+                <h3 class="text-lg font-bold text-gray-900 mb-3">Bencana Alam</h3>
+                <p class="text-gray-700 text-sm mb-4">
+                    Kerusakan akibat angin topan, badai, banjir, tanah longsor, dan gempa bumi.
+                </p>
+                <div class="space-y-2">
+                    <div class="flex items-start">
+                        <i class="fas fa-shield-alt text-green-600 mt-1 mr-2 text-sm"></i>
+                        <span class="text-gray-700 text-sm">Hurricane & storm</span>
+                    </div>
+                    <div class="flex items-start">
+                        <i class="fas fa-water text-green-600 mt-1 mr-2 text-sm"></i>
+                        <span class="text-gray-700 text-sm">Flood & landslide</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Riots & Strikes -->
+            <div class="bg-gradient-to-br from-orange-50 to-white p-6 rounded-2xl border border-orange-200">
+                <div class="w-12 h-12 bg-orange-600 rounded-xl flex items-center justify-center mb-4">
+                    <i class="fas fa-users text-white text-xl"></i></i>
+                </div>
+                <h3 class="text-lg font-bold text-gray-900 mb-3">Pemogokan & Huru Hara</h3>
+                <p class="text-gray-700 text-sm mb-4">
+                    Kerusakan akibat pemogokan, kerusuhan, dan perbuatan jahat orang lain.
+                </p>
+                <div class="space-y-2">
+                    <div class="flex items-start">
+                        <i class="fas fa-shield-alt text-orange-600 mt-1 mr-2 text-sm"></i>
+                        <span class="text-gray-700 text-sm">Riots & strikes</span>
+                    </div>
+                    <div class="flex items-start">
+                        <i class="fas fa-exclamation-triangle text-orange-600 mt-1 mr-2 text-sm"></i>
+                        <span class="text-gray-700 text-sm">Civil commotion</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Malicious Damage -->
+            <div class="bg-gradient-to-br from-purple-50 to-white p-6 rounded-2xl border border-purple-200">
+                <div class="w-12 h-12 bg-purple-600 rounded-xl flex items-center justify-center mb-4">
+                    <i class="fas fa-user-secret text-white text-xl"></i></i>
+                </div>
+                <h3 class="text-lg font-bold text-gray-900 mb-3">Perbuatan Jahat</h3>
+                <p class="text-gray-700 text-sm mb-4">
+                    Kerusakan sengaja yang dilakukan oleh pihak ketiga dengan niat jahat.
+                </p>
+                <div class="space-y-2">
+                    <div class="flex items-start">
+                        <i class="fas fa-shield-alt text-purple-600 mt-1 mr-2 text-sm"></i>
+                        <span class="text-gray-700 text-sm">Vandalism</span>
+                    </div>
+                    <div class="flex items-start">
+                        <i class="fas fa-user-ninja text-purple-600 mt-1 mr-2 text-sm"></i>
+                        <span class="text-gray-700 text-sm">Malicious damage</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Additional Coverage -->
+<section class="py-20 bg-yellow-50">
+    <div class="container mx-auto px-4">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl font-bold text-gray-900 mb-4">Perlindungan Tambahan</h2>
+            <p class="text-lg text-gray-600">Perluasan jaminan untuk perlindungan yang lebih komprehensif</p>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div class="bg-white p-6 rounded-xl shadow-lg text-center">
+                <div class="w-12 h-12 bg-yellow-100 rounded-xl flex items-center justify-center mx-auto mb-4">
+                    <i class="fas fa-coins text-yellow-600 text-xl"></i>
+                </div>
+                <h3 class="text-lg font-bold text-gray-900 mb-2">Loss of Rent</h3>
+                <p class="text-gray-600 text-sm">Kompensasi kehilangan pendapatan sewa</p>
+            </div>
+            
+            <div class="bg-white p-6 rounded-xl shadow-lg text-center">
+                <div class="w-12 h-12 bg-yellow-100 rounded-xl flex items-center justify-center mx-auto mb-4">
+                    <i class="fas fa-users text-yellow-600 text-xl"></i>
+                </div>
+                <h3 class="text-lg font-bold text-gray-900 mb-2">Public Liability</h3>
+                <p class="text-gray-600 text-sm">Tanggung jawab kepada pihak ketiga</p>
+            </div>
+            
+            <div class="bg-white p-6 rounded-xl shadow-lg text-center">
+                <div class="w-12 h-12 bg-yellow-100 rounded-xl flex items-center justify-center mx-auto mb-4">
+                    <i class="fas fa-boxes text-yellow-600 text-xl"></i>
+                </div>
+                <h3 class="text-lg font-bold text-gray-900 mb-2">Stock Coverage</h3>
+                <p class="text-gray-600 text-sm">Perlindungan untuk barang dagangan</p>
+            </div>
+            
+            <div class="bg-white p-6 rounded-xl shadow-lg text-center">
+                <div class="w-12 h-12 bg-yellow-100 rounded-xl flex items-center justify-center mx-auto mb-4">
+                    <i class="fas fa-cogs text-yellow-600 text-xl"></i>
+                </div>
+                <h3 class="text-lg font-bold text-gray-900 mb-2">Machinery Breakdown</h3>
+                <p class="text-gray-600 text-sm">Kerusakan mesin dan peralatan</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Benefits -->
+<section class="py-20 bg-white">
+    <div class="container mx-auto px-4">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl font-bold text-gray-900 mb-4">Keunggulan Kami</h2>
+            <p class="text-lg text-gray-600">Mengapa memilih Property All Risk dari Kokonut</p>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="text-center">
+                <div class="w-20 h-20 bg-blue-600 rounded-2xl flex items-center justify-center mx-auto mb-6" style="background-color: #1e3a8a;">
+                    <i class="fas fa-shield-alt text-white text-2xl"></i>
+                </div>
+                <h3 class="text-xl font-bold text-gray-900 mb-4">Cakupan Komprehensif</h3>
+                <p class="text-gray-600">Perlindungan menyeluruh untuk berbagai risiko yang mungkin terjadi pada properti Anda.</p>
+            </div>
+            
+            <div class="text-center">
+                <div class="w-20 h-20 bg-blue-600 rounded-2xl flex items-center justify-center mx-auto mb-6" style="background-color: #1e3a8a;">
+                    <i class="fas fa-tachometer-alt text-white text-2xl"></i>
+                </div>
+                <h3 class="text-xl font-bold text-gray-900 mb-4">Proses Klaim Cepat</h3>
+                <p class="text-gray-600">Tim klaim profesional yang siap membantu 24/7 untuk proses yang cepat dan transparan.</p>
+            </div>
+            
+            <div class="text-center">
+                <div class="w-20 h-20 bg-blue-600 rounded-2xl flex items-center justify-center mx-auto mb-6" style="background-color: #1e3a8a;">
+                    <i class="fas fa-chart-line text-white text-2xl"></i>
+                </div>
+                <h3 class="text-xl font-bold text-gray-900 mb-4">Harga Kompetitif</h3>
+                <p class="text-gray-600">Premi yang kompetitif dengan cakupan perlindungan optimal sesuai nilai properti.</p>
+            </div>
+        </div>
+    </div>
+</section>

@@ -108,16 +108,16 @@ function initNavigation() {
             navbar.classList.remove('navbar-scrolled');
         }
 
-        // Update active navigation link
-        updateActiveNavLink();
+        // Update active navigation link - DISABLED to avoid conflicts with router.js
+        // updateActiveNavLink();
     });
 
     // Update active page on load and resize
     setTimeout(() => {
-        updateActivePage();
-        updateActiveNavLink();
+        // updateActivePage(); // DISABLED - use router.js instead
+        // updateActiveNavLink(); // DISABLED - use router.js instead
     }, 100);
-    window.addEventListener('resize', updateActivePage);
+    // window.addEventListener('resize', updateActivePage); // DISABLED - conflicts with router.js
 
     // Smooth scroll for navigation links
     navLinks.forEach(link => {
@@ -179,7 +179,7 @@ function initNavigation() {
         });
 
         // Also check current page from URL
-        updateActivePage();
+        // updateActivePage(); // DISABLED - use router.js instead
     }
 
     function updateActivePage() {

@@ -32,114 +32,28 @@ function initMobileMenu() {
     }
 }
 
-// Desktop active link on click
+// Desktop active link on click - DISABLED (handled by router.js)
 function initDesktopActiveLinks() {
-    const desktopLinks = document.querySelectorAll('.nav-link');
-    
-    desktopLinks.forEach(link => {
-        link.addEventListener('click', function(e) {
-            // Remove active class from all desktop links
-            desktopLinks.forEach(l => l.classList.remove('active'));
-            
-            // Add active class to clicked link
-            this.classList.add('active');
-            
-            // Store active link in localStorage for persistence
-            const href = this.getAttribute('href');
-            if (href && href.startsWith('#')) {
-                localStorage.setItem('activeNavLink', href);
-            }
-        });
-    });
-    
-    // Restore active link from localStorage on page load
-    const savedActiveLink = localStorage.getItem('activeNavLink');
-    if (savedActiveLink) {
-        desktopLinks.forEach(link => {
-            const href = link.getAttribute('href');
-            if (href === savedActiveLink) {
-                link.classList.add('active');
-            }
-        });
-    }
+    // DISABLED - router.js handles active state
+    console.log('initDesktopActiveLinks disabled - using router.js instead');
 }
 
-// Smooth scroll behavior
+// Smooth scroll behavior - DISABLED (handled by router.js)
 function initSmoothScroll() {
-    // Smooth scroll for all anchor links
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function(e) {
-            e.preventDefault();
-            const targetId = this.getAttribute('href').substring(1);
-            const targetElement = document.getElementById(targetId);
-            
-            if (targetElement) {
-                const offsetTop = targetElement.offsetTop - 80;
-                window.scrollTo({
-                    top: offsetTop,
-                    behavior: 'smooth'
-                });
-            }
-
-            // Close mobile menu if open
-            const mobileMenu = document.getElementById('mobile-menu');
-            const hamburgerIcon = document.getElementById('hamburger-icon');
-            const closeIcon = document.getElementById('close-icon');
-            if (!mobileMenu.classList.contains('hidden')) {
-                mobileMenu.classList.add('hidden');
-                // Reset to hamburger icon
-                hamburgerIcon.classList.remove('hidden');
-                closeIcon.classList.add('hidden');
-                closeIcon.classList.remove('rotate-90');
-            }
-        });
-    });
+    // DISABLED - router.js handles smooth scroll
+    console.log('initSmoothScroll disabled - using router.js instead');
 }
 
-// Update active navigation link based on scroll
+// Update active navigation link based on scroll - DISABLED (handled by router.js)
 function updateActiveNavLink() {
-    const sections = document.querySelectorAll('section[id]');
-    const navLinks = document.querySelectorAll('.nav-link, .mobile-nav-link');
-    const scrollY = window.pageYOffset;
-    let currentSection = '';
-
-    sections.forEach(section => {
-        const sectionHeight = section.offsetHeight;
-        const sectionTop = section.offsetTop - 100;
-        const sectionId = section.getAttribute('id');
-
-        if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
-            currentSection = sectionId;
-        }
-    });
-
-    // Update all nav links (desktop and mobile)
-    navLinks.forEach(link => {
-        const linkHref = link.getAttribute('href');
-        if (linkHref && linkHref.startsWith('#')) {
-            const targetId = linkHref.substring(1);
-            
-            // Remove active class from all nav links
-            link.classList.remove('active');
-            
-            // Add active class to current section link
-            if (targetId === currentSection) {
-                link.classList.add('active');
-            }
-        }
-    });
+    // DISABLED - router.js handles active state
+    console.log('updateActiveNavLink disabled - using router.js instead');
 }
 
-// Initialize navigation
+// Initialize navigation - DISABLED (handled by router.js)
 function initNavigation() {
-    const sections = document.querySelectorAll('section[id]');
-    const navLinks = document.querySelectorAll('.nav-link, .mobile-nav-link');
-
-    // Update active link on scroll
-    window.addEventListener('scroll', updateActiveNavLink);
-    
-    // Initial update
-    updateActiveNavLink();
+    // DISABLED - router.js handles navigation
+    console.log('initNavigation disabled - using router.js instead');
 }
 
 // Navbar scroll effect
@@ -157,11 +71,11 @@ function initNavbarScroll() {
 
 // Initialize all navigation functions when DOM is loaded
 document.addEventListener('DOMContentLoaded', function() {
-    initMobileMenu();
-    initDesktopActiveLinks(); // Add desktop active link initialization
-    initSmoothScroll();
-    initNavigation();
-    initNavbarScroll();
+    initMobileMenu(); // Mobile menu functionality
+    // initDesktopActiveLinks(); // DISABLED - router.js handles active state
+    // initSmoothScroll(); // DISABLED - router.js handles smooth scroll
+    // initNavigation(); // DISABLED - router.js handles navigation
+    initNavbarScroll(); // Navbar scroll effect
 });
 
 // ESC key to close mobile menu

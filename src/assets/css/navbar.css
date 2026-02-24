@@ -105,10 +105,10 @@
     }
 }
 
-/* Mobile/Tablet/Smartwatch active link color - NORMAL (no special color) */
+/* Mobile/Tablet/Smartwatch active link color - #6fdcb3 */
 @media (max-width: 1023px) {
     .mobile-nav-link.active {
-        color: inherit !important;
+        color: #6fdcb3 !important;
     }
 }
 
@@ -161,18 +161,40 @@ a:active {
     }
 }
 
-/* Navbar scrolled styles - keep desktop active color #6adeaf */
+/* Navbar scrolled styles - keep active state color consistent */
 .navbar-scrolled .nav-link.active {
     color: #6adeaf !important;
 }
 
-.navbar-scrolled .nav-link.text-emerald-300 {
-    color: #d1fae5 !important;
+/* Footer link styles - same as navbar */
+.footer-link {
+    color: #dee5ef !important;
+    transition: color 0.2s ease;
 }
 
-/* Mobile Navbar Link Styles - NORMAL (no special active color) */
-@media (max-width: 1023px) {
-    .mobile-nav-link.active {
-        color: inherit !important;
+.footer-link:hover {
+    color: #61cea8 !important;
+}
+
+/* Desktop footer active link color */
+@media (min-width: 1024px) {
+    .footer-link.active {
+        color: #6adeaf !important;
     }
+}
+
+/* Mobile/Tablet/Smartwatch footer active link color */
+@media (max-width: 1023px) {
+    .footer-link.active {
+        color: #6fdcb3 !important;
+    }
+}
+
+/* Footer scrolled styles - keep active state color consistent */
+.navbar-scrolled .footer-link.active {
+    color: #6adeaf !important;
+}
+
+.navbar-scrolled .footer-link.text-emerald-300 {
+    color: #6adeaf !important;
 }

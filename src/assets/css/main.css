@@ -1,7 +1,7 @@
 /* Custom CSS for Kokonut Insurance Brokers */
 
 /* ========================================
-   MAIN STYLES
+   GLOBAL STYLES
    ======================================== */
 
 /* Base Styles */
@@ -12,6 +12,11 @@ body {
     background-color: #f8fafc; /* Light gray background instead of white */
     margin: 0;
     padding: 0;
+    overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
+section {
+    overflow-x: hidden; /* Prevent horizontal scroll in sections */
 }
 
 /* Typography */

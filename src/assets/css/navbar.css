@@ -15,7 +15,7 @@
     backface-visibility: hidden;
     -webkit-perspective: 1000;
     perspective: 1000;
-    background-color: #0f172a !important;
+    background-color: #ffffff !important;
 }
 
 /* Device-specific optimizations */
@@ -74,41 +74,41 @@
 /* Desktop active link color - FINAL VERSION (Microsoft Duo, MacBook Air, etc) */
 @media (min-width: 1024px) {
     .nav-link.active {
-        color: #6adeaf !important;
+        color: #059669 !important;
     }
     
     .nav-link.active:hover {
-        color: #6adeaf !important;
+        color: #047857 !important;
     }
     
     /* Override any conflicting styles */
     .nav-link.active:focus {
-        color: #6adeaf !important;
+        color: #059669 !important;
     }
     
     .nav-link.active:active {
-        color: #6adeaf !important;
+        color: #059669 !important;
     }
 }
 
 /* Large Desktop/Extra Large (XL) active link color */
 @media (min-width: 1280px) {
     .nav-link.active {
-        color: #6adeaf !important;
+        color: #059669 !important;
     }
 }
 
 /* Extra Extra Large (XXL) active link color */
 @media (min-width: 1536px) {
     .nav-link.active {
-        color: #6adeaf !important;
+        color: #059669 !important;
     }
 }
 
-/* Mobile/Tablet/Smartwatch active link color - #6fdcb3 */
+/* Mobile/Tablet/Smartwatch active link color */
 @media (max-width: 1023px) {
     .mobile-nav-link.active {
-        color: #6fdcb3 !important;
+        color: #059669 !important;
     }
 }
 
@@ -142,12 +142,24 @@ a:active {
 /* Desktop Navbar Link Styles - CONSOLIDATED */
 @media (min-width: 1024px) {
     .nav-link {
-        color: #dee5ef !important;
-        transition: color 0.2s ease;
+        color: #374151 !important;
+        font-weight: 500 !important;
+        transition: all 0.3s ease !important;
+        position: relative !important;
     }
     
     .nav-link:hover {
-        color: #61cea8 !important;
+        color: #059669 !important;
+        transform: translateY(-1px) !important;
+    }
+    
+    .nav-link.active {
+        color: #059669 !important;
+        font-weight: 600 !important;
+    }
+    
+    .nav-link.active:hover {
+        color: #047857 !important;
     }
     
     /* Resources dropdown button */
@@ -163,7 +175,7 @@ a:active {
 
 /* Navbar scrolled styles - keep active state color consistent */
 .navbar-scrolled .nav-link.active {
-    color: #6adeaf !important;
+    color: #059669 !important;
 }
 
 /* Footer link styles - same as navbar */

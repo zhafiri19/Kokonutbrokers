@@ -1,9 +1,9 @@
-<nav id="navbar" class="fixed top-0 w-full z-50 transition-all duration-300" style="background-color: #0f172a; position: fixed; top: 0; left: 0; right: 0; -webkit-position: sticky; position: sticky; -webkit-backdrop-filter: blur(10px); backdrop-filter: blur(10px);">
+<nav id="navbar" class="fixed top-0 w-full z-50 transition-all duration-300 shadow-lg backdrop-blur-lg bg-white/90 border-b border-gray-100/50" style="position: fixed; top: 0; left: 0; right: 0; -webkit-position: sticky; position: sticky;">
     <div class="container mx-auto px-6 lg:px-10">
         <div class="flex justify-between items-center h-20">
             <!-- Logo -->
             <div class="flex items-center flex-shrink-0 ml-2 lg:ml-0">
-                <div class="text-white font-bold text-xl flex items-center">
+                <div class="text-gray-900 font-extrabold text-xl flex items-center tracking-tight">
                     <img
                         src="src/assets/images/Logo_kokonut.png"
                         alt="Kokonut Insurance"
@@ -13,95 +13,75 @@
             </div>
 
             <!-- Desktop Menu -->
-            <div class="hidden lg:flex items-center space-x-4 xl:space-x-6 flex-1 justify-end mr-2 lg:mr-0">
+            <div class="hidden lg:flex items-center space-x-6 xl:space-x-8 flex-1 justify-end mr-2 lg:mr-0">
                 <a
                     href="#home"
-                    class="nav-link transition-colors duration-200 relative group"
+                    class="nav-link font-medium text-gray-700 hover:text-emerald-600 transition-all duration-300 relative group py-2"
                     data-page="home"
                 >
                     Home
                     <span
-                        class="absolute bottom-0 left-0 w-0 h-0.5 bg-white transition-all duration-300 group-hover:w-full"
+                        class="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-emerald-500 to-emerald-600 transition-all duration-300 group-hover:w-full"
                     ></span>
                 </a>
                 <a
                     href="#tentang"
-                    class="nav-link transition-colors duration-200 relative group"
+                    class="nav-link font-medium text-gray-700 hover:text-emerald-600 transition-all duration-300 relative group py-2"
                     data-page="tentang"
                 >
                     Tentang Kami
                     <span
-                        class="absolute bottom-0 left-0 w-0 h-0.5 bg-white transition-all duration-300 group-hover:w-full"
+                        class="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-emerald-500 to-emerald-600 transition-all duration-300 group-hover:w-full"
                     ></span>
                 </a>
                 <a
                     href="#produk"
-                    class="nav-link transition-colors duration-200 relative group"
+                    class="nav-link font-medium text-gray-700 hover:text-emerald-600 transition-all duration-300 relative group py-2"
                     data-page="produk"
                 >
                     Produk
                     <span
-                        class="absolute bottom-0 left-0 w-0 h-0.5 bg-white transition-all duration-300 group-hover:w-full"
+                        class="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-emerald-500 to-emerald-600 transition-all duration-300 group-hover:w-full"
                     ></span>
                 </a>
-                <div class="relative group">
-                    <button
-                        class="transition-colors duration-200 flex items-center"
-                    >
-                        Resources
-                        <i class="fas fa-chevron-down ml-1 text-xs"></i>
-                    </button>
-                    <div
-                        class="absolute top-full left-0 mt-2 w-48 bg-white rounded-lg shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50"
-                    >
-                        <a
-                            href="#blog"
-                            class="block px-4 py-3 text-gray-700 hover:bg-emerald-50 hover:text-[#61cea8] transition-colors"
-                        >
-                            <i class="fas fa-blog mr-2"></i>Blog & Artikel
-                        </a>
-                        <a
-                            href="#faq"
-                            class="block px-4 py-3 text-gray-700 hover:bg-emerald-50 hover:text-[#61cea8] transition-colors"
-                        >
-                            <i class="fas fa-question-circle mr-2"></i>FAQ
-                        </a>
-                        <a
-                            href="#download"
-                            class="block px-4 py-3 text-gray-700 hover:bg-emerald-50 hover:text-[#61cea8] transition-colors"
-                        >
-                            <i class="fas fa-download mr-2"></i>Download
-                        </a>
-                    </div>
-                </div>
                 <a
                     href="#penghargaan-mitra"
-                    class="nav-link transition-colors duration-200 relative group"
+                    class="nav-link font-medium text-gray-700 hover:text-emerald-600 transition-all duration-300 relative group py-2"
                     data-page="penghargaan-mitra"
                 >
                     Penghargaan & Mitra
                     <span
-                        class="absolute bottom-0 left-0 w-0 h-0.5 bg-white transition-all duration-300 group-hover:w-full"
+                        class="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-emerald-500 to-emerald-600 transition-all duration-300 group-hover:w-full"
+                    ></span>
+                </a>
+                <a
+                    href="#blog"
+                    class="nav-link font-medium text-gray-700 hover:text-emerald-600 transition-all duration-300 relative group py-2"
+                    data-page="blog"
+                >
+                    Artikel
+                    <span
+                        class="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-emerald-500 to-emerald-600 transition-all duration-300 group-hover:w-full"
                     ></span>
                 </a>
                 <a
                     href="#karir"
-                    class="nav-link transition-colors duration-200 relative group"
+                    class="nav-link font-medium text-gray-700 hover:text-emerald-600 transition-all duration-300 relative group py-2"
                     data-page="karir"
                 >
                     Karir
                     <span
-                        class="absolute bottom-0 left-0 w-0 h-0.5 bg-white transition-all duration-300 group-hover:w-full"
+                        class="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-emerald-500 to-emerald-600 transition-all duration-300 group-hover:w-full"
                     ></span>
                 </a>
                 <a
                     href="#kontak"
-                    class="nav-link transition-colors duration-200 relative group"
+                    class="nav-link font-medium text-gray-700 hover:text-emerald-600 transition-all duration-300 relative group py-2"
                     data-page="kontak"
                 >
                     Kontak
                     <span
-                        class="absolute bottom-0 left-0 w-0 h-0.5 bg-white transition-all duration-300 group-hover:w-full"
+                        class="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-emerald-500 to-emerald-600 transition-all duration-300 group-hover:w-full"
                     ></span>
                 </a>
             </div>
@@ -110,7 +90,7 @@
             <div class="lg:hidden">
                 <button
                     id="mobile-menu-button"
-                    class="text-white hover:text-[#61cea8] focus:outline-none transition-all duration-300"
+                    class="text-gray-700 hover:text-emerald-600 focus:outline-none transition-all duration-300 p-2 rounded-lg hover:bg-gray-50"
                 >
                     <i id="hamburger-icon" class="fas fa-bars text-2xl transition-transform duration-300"></i>
                     <i id="close-icon" class="fas fa-times text-2xl transition-transform duration-300 hidden"></i>
@@ -119,64 +99,49 @@
         </div>
 
         <!-- Mobile Menu -->
-        <div id="mobile-menu" class="hidden lg:hidden" style="background-color: #0f172a;" class="bg-opacity-95">
-            <div class="px-2 pt-2 pb-3 space-y-1">
+        <div id="mobile-menu" class="hidden lg:hidden bg-white/95 backdrop-blur-lg shadow-xl border-t border-gray-100/50" class="bg-opacity-95">
+            <div class="px-4 pt-4 pb-6 space-y-2">
                 <a
                     href="#home"
-                    class="mobile-nav-link block text-white hover:text-[#61cea8] px-3 py-2 rounded-md text-base font-medium"
+                    class="mobile-nav-link block font-medium text-gray-700 hover:text-emerald-600 hover:bg-emerald-50 px-4 py-3 rounded-lg transition-all duration-300"
                 >
-                    Home
+                    <i class="fas fa-home mr-3 text-emerald-500"></i>Home
                 </a>
                 <a
                     href="#tentang"
-                    class="mobile-nav-link block text-white hover:text-[#61cea8] px-3 py-2 rounded-md text-base font-medium"
+                    class="mobile-nav-link block font-medium text-gray-700 hover:text-emerald-600 hover:bg-emerald-50 px-4 py-3 rounded-lg transition-all duration-300"
                 >
-                    Tentang Kami
+                    <i class="fas fa-building mr-3 text-emerald-500"></i>Tentang Kami
                 </a>
                 <a
                     href="#produk"
-                    class="mobile-nav-link block text-white hover:text-[#61cea8] px-3 py-2 rounded-md text-base font-medium"
+                    class="mobile-nav-link block font-medium text-gray-700 hover:text-emerald-600 hover:bg-emerald-50 px-4 py-3 rounded-lg transition-all duration-300"
                 >
-                    Produk
+                    <i class="fas fa-shield-alt mr-3 text-emerald-500"></i>Produk
                 </a>
                 <a
                     href="#penghargaan-mitra"
-                    class="mobile-nav-link block text-white hover:text-[#61cea8] px-3 py-2 rounded-md text-base font-medium"
+                    class="mobile-nav-link block font-medium text-gray-700 hover:text-emerald-600 hover:bg-emerald-50 px-4 py-3 rounded-lg transition-all duration-300"
                 >
-                    Penghargaan & Mitra
+                    <i class="fas fa-award mr-3 text-emerald-500"></i>Penghargaan & Mitra
                 </a>
-                <div class="border-t border-emerald-800 pt-2">
-                    <p class="text-emerald-300 px-3 py-2 text-sm font-semibold">Resources</p>
-                    <a
-                        href="#blog"
-                        class="mobile-nav-link block text-white hover:text-[#61cea8] px-3 py-2 rounded-md text-base font-medium pl-6"
-                    >
-                        <i class="fas fa-blog mr-2"></i>Blog & Artikel
-                    </a>
-                    <a
-                        href="#faq"
-                        class="mobile-nav-link block text-white hover:text-[#61cea8] px-3 py-2 rounded-md text-base font-medium pl-6"
-                    >
-                        <i class="fas fa-question-circle mr-2"></i>FAQ
-                    </a>
-                    <a
-                        href="#download"
-                        class="mobile-nav-link block text-white hover:text-[#61cea8] px-3 py-2 rounded-md text-base font-medium pl-6"
-                    >
-                        <i class="fas fa-download mr-2"></i>Download
-                    </a>
-                </div>
+                <a
+                    href="#blog"
+                    class="mobile-nav-link block font-medium text-gray-700 hover:text-emerald-600 hover:bg-emerald-50 px-4 py-3 rounded-lg transition-all duration-300"
+                >
+                    <i class="fas fa-newspaper mr-3 text-emerald-500"></i>Artikel
+                </a>
                 <a
                     href="#karir"
-                    class="mobile-nav-link block text-white hover:text-[#61cea8] px-3 py-2 rounded-md text-base font-medium"
+                    class="mobile-nav-link block font-medium text-gray-700 hover:text-emerald-600 hover:bg-emerald-50 px-4 py-3 rounded-lg transition-all duration-300"
                 >
-                    Karir
+                    <i class="fas fa-briefcase mr-3 text-emerald-500"></i>Karir
                 </a>
                 <a
                     href="#kontak"
-                    class="mobile-nav-link block text-white hover:text-[#61cea8] px-3 py-2 rounded-md text-base font-medium"
+                    class="mobile-nav-link block font-medium text-gray-700 hover:text-emerald-600 hover:bg-emerald-50 px-4 py-3 rounded-lg transition-all duration-300"
                 >
-                    Kontak
+                    <i class="fas fa-envelope mr-3 text-emerald-500"></i>Kontak
                 </a>
                             </div>
         </div>

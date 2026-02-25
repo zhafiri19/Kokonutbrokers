@@ -272,10 +272,7 @@ main#main-content {
     }
 }
 
-/* Smooth Scrolling */
-html {
-    scroll-behavior: smooth;
-}
+/* Smooth Scrolling - REMOVED for default browser behavior */
 
 /* Responsive Text */
 @media (max-width: 640px) {

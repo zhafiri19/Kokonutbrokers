@@ -274,70 +274,6 @@
     </div>
 </section>
 
-<!-- FAQ Section -->
-<section class="py-20 bg-gradient-to-br from-emerald-50 to-white">
-    <div class="container mx-auto px-4">
-        <div class="text-center mb-12 fade-in">
-            <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-                Frequently Asked <span class="text-emerald-600">Questions</span>
-            </h2>
-            <p class="text-lg text-gray-600">Pertanyaan yang sering diajukan tentang produk kami</p>
-        </div>
-
-        <div class="max-w-3xl mx-auto">
-            <div class="space-y-4">
-                <div class="faq-item bg-white rounded-xl shadow-lg overflow-hidden fade-in">
-                    <button class="faq-toggle w-full p-6 text-left flex justify-between items-center hover:bg-emerald-50 transition-colors">
-                        <h3 class="font-semibold text-lg text-gray-900">Apa bedanya broker dengan agen asuransi?</h3>
-                        <i class="fas fa-chevron-down text-emerald-600 transition-transform"></i>
-                    </button>
-                    <div class="faq-content hidden px-6 pb-6">
-                        <p class="text-gray-600">
-                            Broker bekerja untuk kepentingan nasabah dan independen, sedangkan agen bekerja untuk perusahaan asuransi tertentu. Broker akan membantu Anda membandingkan produk dari berbagai perusahaan untuk mendapatkan yang terbaik.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="faq-item bg-white rounded-xl shadow-lg overflow-hidden fade-in">
-                    <button class="faq-toggle w-full p-6 text-left flex justify-between items-center hover:bg-emerald-50 transition-colors">
-                        <h3 class="font-semibold text-lg text-gray-900">Apakah klaim dijamin cair?</h3>
-                        <i class="fas fa-chevron-down text-emerald-600 transition-transform"></i>
-                    </button>
-                    <div class="faq-content hidden px-6 pb-6">
-                        <p class="text-gray-600">
-                            Kami tidak bisa menjamin 100% klaim cair, namun dengan bantuan broker profesional, proses klaim akan lebih mudah dan peluang cair lebih tinggi karena kami memastikan polis sesuai kebutuhan dan membantu proses administrasi.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="faq-item bg-white rounded-xl shadow-lg overflow-hidden fade-in">
-                    <button class="faq-toggle w-full p-6 text-left flex justify-between items-center hover:bg-emerald-50 transition-colors">
-                        <h3 class="font-semibold text-lg text-gray-900">Apakah premi bisa dinegosiasikan?</h3>
-                        <i class="fas fa-chevron-down text-emerald-600 transition-transform"></i>
-                    </button>
-                    <div class="faq-content hidden px-6 pb-6">
-                        <p class="text-gray-600">
-                            Ya, sebagai broker kami memiliki hubungan baik dengan berbagai perusahaan asuransi dan bisa membantu negosiasi premium untuk mendapatkan harga terbaik sesuai coverage yang Anda butuhkan.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="faq-item bg-white rounded-xl shadow-lg overflow-hidden fade-in">
-                    <button class="faq-toggle w-full p-6 text-left flex justify-between items-center hover:bg-emerald-50 transition-colors">
-                        <h3 class="font-semibold text-lg text-gray-900">Apakah konsultasi berbayar?</h3>
-                        <i class="fas fa-chevron-down text-emerald-600 transition-transform"></i>
-                    </button>
-                    <div class="faq-content hidden px-6 pb-6">
-                        <p class="text-gray-600">
-                            Konsultasi awal dengan kami gratis tanpa biaya. Kami akan membantu Anda memahami kebutuhan asuransi dan memberikan rekomendasi produk yang sesuai tanpa ada kewajiban untuk membeli.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
 <!-- CTA Section -->
 <section class="py-20 bg-gradient-to-r from-emerald-600 to-emerald-700">
     <div class="container mx-auto px-4 text-center">
@@ -348,10 +284,16 @@
             <p class="text-xl text-emerald-100 mb-8 max-w-2xl mx-auto">
                 Tim profesional kami siap membantu Anda menemukan solusi asuransi yang tepat
             </p>
-            <button class="bg-white text-emerald-700 px-8 py-4 rounded-full font-semibold text-lg hover:bg-emerald-50 transition-all duration-300 shadow-lg">
-                <i class="fas fa-comments mr-2"></i>
-                Konsultasi Gratis Sekarang
-            </button>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <button onclick="router.navigateTo('kontak')" class="bg-white text-emerald-600 hover:bg-emerald-50 px-8 py-4 rounded-lg font-semibold transition-all duration-300 hover:scale-105 hover:shadow-xl">
+                    <i class="fas fa-comments mr-2"></i>
+                    Konsultasi Gratis
+                </button>
+                <a href="#kontak" class="border-2 border-white text-white hover:bg-white hover:text-emerald-600 px-8 py-4 rounded-lg font-semibold transition-all duration-300 inline-flex items-center justify-center hover:scale-105 hover:shadow-xl">
+                    <i class="fas fa-phone mr-2"></i>
+                    Hubungi Kami
+                </a>
+            </div>
         </div>
     </div>
 </section>

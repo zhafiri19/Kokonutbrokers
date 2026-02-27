@@ -29,8 +29,16 @@ class Router {
             'asuransi-property-all-risk': 'src/pages/asuransi-property-all-risk.html'
         };
 
-        // Handle initial route
-        this.handleRoute();
+        // Check if home page is already loaded
+        const mainContent = document.getElementById('main-content');
+        if (mainContent && mainContent.innerHTML.trim() !== '') {
+            // Home page is already loaded, just set the route
+            this.currentRoute = 'home';
+            this.updateActiveNav('home');
+        } else {
+            // Handle initial route
+            this.handleRoute();
+        }
         
         // Handle browser back/forward
         window.addEventListener('popstate', () => {
@@ -93,10 +101,9 @@ class Router {
             const mainContent = document.getElementById('main-content');
             
             if (mainContent) {
-                // Add fade out effect
-                mainContent.style.opacity = '0';
-                
-                setTimeout(() => {
+                // Check if this is initial load (no current route yet)
+                if (!this.currentRoute) {
+                    // For initial load, show immediately without fade
                     mainContent.innerHTML = content;
                     mainContent.style.opacity = '1';
                     
@@ -105,10 +112,24 @@ class Router {
                     
                     // Update active navigation
                     this.updateActiveNav(route);
+                } else {
+                    // For navigation, use fade effect
+                    mainContent.style.opacity = '0';
                     
-                    // Scroll to top
-                    window.scrollTo({ top: 0, behavior: 'smooth' });
-                }, 300);
+                    setTimeout(() => {
+                        mainContent.innerHTML = content;
+                        mainContent.style.opacity = '1';
+                        
+                        // Re-initialize animations for new content
+                        this.reinitializeAnimations();
+                        
+                        // Update active navigation
+                        this.updateActiveNav(route);
+                        
+                        // Scroll to top
+                        window.scrollTo({ top: 0, behavior: 'smooth' });
+                    }, 300);
+                }
             }
 
             this.currentRoute = route;

@@ -1,14 +1,13 @@
 // Main JavaScript for Kokonut Insurance Brokers Website
 
 document.addEventListener('DOMContentLoaded', function() {
-    // Show loading screen
-    showLoadingScreen();
-    
-    // Load components
-    loadComponents();
-    
-    // Initialize all functionality after loading
-    setTimeout(() => {
+    // Load navbar, footer, and home page simultaneously
+    Promise.all([
+        loadNavbar(),
+        loadFooter(),
+        loadHomePage()
+    ]).then(() => {
+        // Initialize all functionality after components are loaded
         initNavigation();
         initScrollAnimations();
         initCounters();
@@ -22,76 +21,49 @@ document.addEventListener('DOMContentLoaded', function() {
         initBlogFilters();
         initJobFilters();
         initFAQSearch();
-        hideLoadingScreen();
-    }, 2000);
+    });
 });
 
-// Loading Screen Functions
-function showLoadingScreen() {
-    const loadingContainer = document.getElementById('loading-screen-container');
-    const navbar = document.getElementById('navbar');
-    
-    // Hide navbar during loading
-    if (navbar) {
-        navbar.style.display = 'none';
-    }
-    
-    if (loadingContainer) {
-        fetch('src/components/LoadingScreen.html')
-            .then(response => response.text())
-            .then(html => {
-                loadingContainer.innerHTML = html;
-            })
-            .catch(error => console.error('Error loading loading screen:', error));
-    }
-}
 
-function hideLoadingScreen() {
-    const loadingScreen = document.getElementById('loading-screen');
-    const navbar = document.getElementById('navbar');
-    
-    if (loadingScreen) {
-        setTimeout(() => {
-            loadingScreen.style.opacity = '0';
-            setTimeout(() => {
-                loadingScreen.style.display = 'none';
-                // Show navbar after loading screen is hidden
-                if (navbar) {
-                    navbar.style.display = 'block';
-                }
-            }, 500);
-        }, 1000);
-    }
-}
-
-// Load Components
-function loadComponents() {
-    loadNavbar();
-    loadFooter();
-}
 
 function loadNavbar() {
     const navbarContainer = document.getElementById('navbar');
     if (navbarContainer) {
-        fetch('src/components/Navbar.html')
+        return fetch('src/components/Navbar.html')
             .then(response => response.text())
             .then(html => {
                 navbarContainer.innerHTML = html;
             })
             .catch(error => console.error('Error loading navbar:', error));
     }
+    return Promise.resolve();
 }
 
 function loadFooter() {
     const footerContainer = document.getElementById('footer');
     if (footerContainer) {
-        fetch('src/components/Footer.html')
+        return fetch('src/components/Footer.html')
             .then(response => response.text())
             .then(html => {
                 footerContainer.innerHTML = html;
             })
             .catch(error => console.error('Error loading footer:', error));
     }
+    return Promise.resolve();
+}
+
+function loadHomePage() {
+    const mainContent = document.getElementById('main-content');
+    if (mainContent) {
+        return fetch('src/pages/home.html')
+            .then(response => response.text())
+            .then(html => {
+                mainContent.innerHTML = html;
+                mainContent.style.opacity = '1';
+            })
+            .catch(error => console.error('Error loading home page:', error));
+    }
+    return Promise.resolve();
 }
 
 // Navigation functionality

@@ -21,6 +21,25 @@ document.addEventListener('DOMContentLoaded', function() {
         initBlogFilters();
         initJobFilters();
         initFAQSearch();
+        
+        // Ensure home link is active for all devices
+        setTimeout(() => {
+            if (window.router) {
+                window.router.updateActiveNav('home');
+            } else {
+                // Fallback: manually activate home link
+                const homeLinks = document.querySelectorAll('a[href="#home"]');
+                homeLinks.forEach(link => {
+                    link.classList.remove('text-white');
+                    link.classList.add('active', 'text-emerald-300', 'font-semibold');
+                    const underline = link.querySelector('span');
+                    if (underline) {
+                        underline.classList.remove('w-0');
+                        underline.classList.add('w-full');
+                    }
+                });
+            }
+        }, 100);
     });
 });
 

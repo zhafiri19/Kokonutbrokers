@@ -29,14 +29,21 @@ class Router {
             'asuransi-property-all-risk': 'src/pages/asuransi-property-all-risk.html'
         };
 
-        // Check if home page is already loaded
+        // Get current route from hash or default to home
+        const currentHash = window.location.hash.substring(1);
+        const route = currentHash && this.routes[currentHash] ? currentHash : 'home';
+        
+        // Check if home page is already loaded and we're on home route
         const mainContent = document.getElementById('main-content');
-        if (mainContent && mainContent.innerHTML.trim() !== '') {
+        if (mainContent && mainContent.innerHTML.trim() !== '' && route === 'home') {
             // Home page is already loaded, just set the route
             this.currentRoute = 'home';
-            this.updateActiveNav('home');
+            // Ensure home link is active immediately
+            setTimeout(() => {
+                this.updateActiveNav('home');
+            }, 50);
         } else {
-            // Handle initial route
+            // Load the appropriate page based on hash
             this.handleRoute();
         }
         
@@ -77,19 +84,24 @@ class Router {
     }
 
     handleRoute() {
-        const hash = window.location.hash.substring(1) || 'home';
-        this.loadPage(hash);
+        const hash = window.location.hash.substring(1);
+        const route = hash && this.routes[hash] ? hash : 'home';
+        this.loadPage(route);
     }
 
     async navigateTo(route) {
-        window.location.hash = route;
-        await this.loadPage(route);
+        if (this.routes[route]) {
+            window.location.hash = route;
+            await this.loadPage(route);
+        }
     }
 
     async loadPage(route) {
         if (!this.routes[route]) {
             route = 'home';
         }
+
+        this.currentRoute = route;
 
         try {
             const response = await fetch(this.routes[route]);

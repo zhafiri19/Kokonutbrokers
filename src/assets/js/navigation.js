@@ -13,21 +13,75 @@ function initMobileMenu() {
         mobileMenuButton.addEventListener('click', function() {
             const isHidden = mobileMenu.classList.contains('hidden');
             
-            // Toggle menu
-            mobileMenu.classList.toggle('hidden');
-            
-            // Toggle icons with animation
+            // Toggle menu with smooth animation
             if (isHidden) {
+                // Show menu
+                mobileMenu.classList.remove('hidden');
+                setTimeout(() => {
+                    mobileMenu.classList.add('show');
+                    mobileMenu.classList.remove('hidden');
+                }, 10);
+                
                 // Show close icon (X), hide hamburger
                 hamburgerIcon.classList.add('hidden');
                 closeIcon.classList.remove('hidden');
                 closeIcon.classList.add('rotate-90');
+                
+                // Prevent body scroll when menu is open
+                document.body.style.overflow = 'hidden';
+                
             } else {
+                // Hide menu
+                mobileMenu.classList.remove('show');
+                mobileMenu.classList.add('hidden');
+                
                 // Show hamburger icon, hide close icon (X)
                 hamburgerIcon.classList.remove('hidden');
                 closeIcon.classList.add('hidden');
                 closeIcon.classList.remove('rotate-90');
+                
+                // Restore body scroll
+                document.body.style.overflow = '';
             }
+        });
+
+        // Close menu when clicking outside
+        document.addEventListener('click', function(event) {
+            if (!mobileMenuButton.contains(event.target) && !mobileMenu.contains(event.target)) {
+                if (!mobileMenu.classList.contains('hidden')) {
+                    mobileMenu.classList.remove('show');
+                    mobileMenu.classList.add('hidden');
+                    hamburgerIcon.classList.remove('hidden');
+                    closeIcon.classList.add('hidden');
+                    closeIcon.classList.remove('rotate-90');
+                    document.body.style.overflow = '';
+                }
+            }
+        });
+
+        // Close menu when pressing Escape key
+        document.addEventListener('keydown', function(event) {
+            if (event.key === 'Escape' && !mobileMenu.classList.contains('hidden')) {
+                mobileMenu.classList.remove('show');
+                mobileMenu.classList.add('hidden');
+                hamburgerIcon.classList.remove('hidden');
+                closeIcon.classList.add('hidden');
+                closeIcon.classList.remove('rotate-90');
+                document.body.style.overflow = '';
+            }
+        });
+
+        // Close menu when clicking on mobile nav links
+        const mobileNavLinks = document.querySelectorAll('.mobile-nav-link');
+        mobileNavLinks.forEach(link => {
+            link.addEventListener('click', function() {
+                mobileMenu.classList.remove('show');
+                mobileMenu.classList.add('hidden');
+                hamburgerIcon.classList.remove('hidden');
+                closeIcon.classList.add('hidden');
+                closeIcon.classList.remove('rotate-90');
+                document.body.style.overflow = '';
+            });
         });
     }
 }
